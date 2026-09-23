@@ -1,4 +1,5 @@
-## Hi there 👋
+## Nazi Pedia 👋
+nazi-pedia is an open, growing reference library of Python implementations covering diverse fields — from pure mathematics and physics to data science, engineering, and automation. Each entry is a self-contained, runnable notebook or script, organized by topic and discipline, designed to serve as both a learning resource and a practical code reference for students, researchers, and developers.
 
 <!--
 **nazi-pedia/nazi-pedia** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
