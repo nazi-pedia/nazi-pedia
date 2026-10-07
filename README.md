@@ -1,8 +1,16 @@
 # Three paths
 
-This folder holds three courses. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is three numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
-The Python path uses only the standard library. NumPy and the calculus path need the packages in `requirements.txt`:
+```text
+01-Python Fundamentals/     20 lessons, standard library only
+02-Numpy Fundamentals/      16 lessons, needs NumPy
+03-Calculus with Python/    43 lessons, needs SymPy
+README.md
+requirements.txt
+```
+
+`01` uses only the Python standard library. `02` and `03` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -22,26 +30,26 @@ Formulas are written as display mathematics. Code comments name the step you are
 
 | Notebook | Title |
 |---|---|
-| `python-fundamentals/01-programs.ipynb` | How a Python program speaks |
-| `python-fundamentals/02-names.ipynb` | Names, values, and assignment |
-| `python-fundamentals/03-numbers.ipynb` | Numbers and arithmetic |
-| `python-fundamentals/04-decisions.ipynb` | Decisions |
-| `python-fundamentals/05-strings.ipynb` | Strings: positions and slices |
-| `python-fundamentals/06-string-methods.ipynb` | String methods and f-strings |
-| `python-fundamentals/07-loops.ipynb` | Loops |
-| `python-fundamentals/08-lists.ipynb` | Lists |
-| `python-fundamentals/09-tuples.ipynb` | Tuples and unpacking |
-| `python-fundamentals/10-dictionaries.ipynb` | Dictionaries |
-| `python-fundamentals/11-sets.ipynb` | Sets |
-| `python-fundamentals/12-functions.ipynb` | Functions |
-| `python-fundamentals/13-comprehensions.ipynb` | Comprehensions |
-| `python-fundamentals/14-modules.ipynb` | Modules and the standard library |
-| `python-fundamentals/15-files.ipynb` | Files |
-| `python-fundamentals/16-exceptions.ipynb` | Exceptions |
-| `python-fundamentals/17-classes.ipynb` | Classes |
-| `python-fundamentals/18-walking-data.ipynb` | Walking through data |
-| `python-fundamentals/19-small-program.ipynb` | A small program, built one step at a time |
-| `python-fundamentals/20-recursion.ipynb` | Recursion |
+| `01-Python Fundamentals/01-programs.ipynb` | How a Python program speaks |
+| `01-Python Fundamentals/02-names.ipynb` | Names, values, and assignment |
+| `01-Python Fundamentals/03-numbers.ipynb` | Numbers and arithmetic |
+| `01-Python Fundamentals/04-decisions.ipynb` | Decisions |
+| `01-Python Fundamentals/05-strings.ipynb` | Strings: positions and slices |
+| `01-Python Fundamentals/06-string-methods.ipynb` | String methods and f-strings |
+| `01-Python Fundamentals/07-loops.ipynb` | Loops |
+| `01-Python Fundamentals/08-lists.ipynb` | Lists |
+| `01-Python Fundamentals/09-tuples.ipynb` | Tuples and unpacking |
+| `01-Python Fundamentals/10-dictionaries.ipynb` | Dictionaries |
+| `01-Python Fundamentals/11-sets.ipynb` | Sets |
+| `01-Python Fundamentals/12-functions.ipynb` | Functions |
+| `01-Python Fundamentals/13-comprehensions.ipynb` | Comprehensions |
+| `01-Python Fundamentals/14-modules.ipynb` | Modules and the standard library |
+| `01-Python Fundamentals/15-files.ipynb` | Files |
+| `01-Python Fundamentals/16-exceptions.ipynb` | Exceptions |
+| `01-Python Fundamentals/17-classes.ipynb` | Classes |
+| `01-Python Fundamentals/18-walking-data.ipynb` | Walking through data |
+| `01-Python Fundamentals/19-small-program.ipynb` | A small program, built one step at a time |
+| `01-Python Fundamentals/20-recursion.ipynb` | Recursion |
 
 ## NumPy
 
@@ -57,22 +65,22 @@ Broadcasting, reductions, and matrix algebra are written as display mathematics.
 
 | Notebook | Title |
 |---|---|
-| `numpy-fundamentals/01-creating-arrays.ipynb` | How an array is different from a list |
-| `numpy-fundamentals/02-shape-dtype.ipynb` | Shape, dtype, and reshape |
-| `numpy-fundamentals/03-indexing.ipynb` | Indexing and slicing |
-| `numpy-fundamentals/04-masks.ipynb` | Boolean masks and fancy indexing |
-| `numpy-fundamentals/05-vectorized.ipynb` | Vectorized arithmetic |
-| `numpy-fundamentals/06-broadcasting.ipynb` | Broadcasting |
-| `numpy-fundamentals/07-reductions.ipynb` | Reductions along an axis |
-| `numpy-fundamentals/08-ufuncs.ipynb` | Universal functions |
-| `numpy-fundamentals/09-missing.ipynb` | Missing values |
-| `numpy-fundamentals/10-sorting.ipynb` | Sorting and uniqueness |
-| `numpy-fundamentals/11-combining.ipynb` | Stacking and splitting |
-| `numpy-fundamentals/12-views-copies.ipynb` | Views and copies |
-| `numpy-fundamentals/13-random.ipynb` | Random numbers |
-| `numpy-fundamentals/14-vectors.ipynb` | Vector algebra |
-| `numpy-fundamentals/15-matrices.ipynb` | Matrix algebra |
-| `numpy-fundamentals/16-numerical-study.ipynb` | A numerical study, built one step at a time |
+| `02-Numpy Fundamentals/01-creating-arrays.ipynb` | How an array is different from a list |
+| `02-Numpy Fundamentals/02-shape-dtype.ipynb` | Shape, dtype, and reshape |
+| `02-Numpy Fundamentals/03-indexing.ipynb` | Indexing and slicing |
+| `02-Numpy Fundamentals/04-masks.ipynb` | Boolean masks and fancy indexing |
+| `02-Numpy Fundamentals/05-vectorized.ipynb` | Vectorized arithmetic |
+| `02-Numpy Fundamentals/06-broadcasting.ipynb` | Broadcasting |
+| `02-Numpy Fundamentals/07-reductions.ipynb` | Reductions along an axis |
+| `02-Numpy Fundamentals/08-ufuncs.ipynb` | Universal functions |
+| `02-Numpy Fundamentals/09-missing.ipynb` | Missing values |
+| `02-Numpy Fundamentals/10-sorting.ipynb` | Sorting and uniqueness |
+| `02-Numpy Fundamentals/11-combining.ipynb` | Stacking and splitting |
+| `02-Numpy Fundamentals/12-views-copies.ipynb` | Views and copies |
+| `02-Numpy Fundamentals/13-random.ipynb` | Random numbers |
+| `02-Numpy Fundamentals/14-vectors.ipynb` | Vector algebra |
+| `02-Numpy Fundamentals/15-matrices.ipynb` | Matrix algebra |
+| `02-Numpy Fundamentals/16-numerical-study.ipynb` | A numerical study, built one step at a time |
 
 ## Calculus with Python
 
@@ -89,61 +97,61 @@ An indefinite integral is rechecked by differentiation, because SymPy omits the 
 
 | Notebook | Title |
 |---|---|
-| `01-functions.ipynb` | Functions: domain, range, composition, inverse, piecewise |
-| `02-exponential-log-trigonometric.ipynb` | Exponential, logarithmic, trigonometric, and inverse trigonometric functions |
-| `03-rational-asymptotes.ipynb` | Rational functions and asymptotes |
-| `04-limits.ipynb` | Limits and the limit laws |
-| `05-continuity.ipynb` | Continuity, the squeeze theorem, and the intermediate value theorem |
-| `06-infinite-limits.ipynb` | Infinite limits and limits at infinity |
-| `07-derivative-rules.ipynb` | The derivative: definition, power, product, and quotient rules |
-| `08-chain-special-derivatives.ipynb` | The chain rule and derivatives of special functions |
-| `09-implicit-logarithmic.ipynb` | Implicit differentiation and logarithmic differentiation |
-| `10-related-rates.ipynb` | Related rates |
-| `11-linearization-mvt.ipynb` | Linearization, differentials, Rolle, and the mean value theorem |
-| `12-lhopital.ipynb` | L'Hôpital's rule |
-| `13-curve-sketching.ipynb` | Curve sketching |
-| `14-optimization.ipynb` | Optimization |
-| `15-newtons-method.ipynb` | Newton's method |
+| `03-Calculus with Python/01-functions.ipynb` | Functions: domain, range, composition, inverse, piecewise |
+| `03-Calculus with Python/02-exponential-log-trigonometric.ipynb` | Exponential, logarithmic, trigonometric, and inverse trigonometric functions |
+| `03-Calculus with Python/03-rational-asymptotes.ipynb` | Rational functions and asymptotes |
+| `03-Calculus with Python/04-limits.ipynb` | Limits and the limit laws |
+| `03-Calculus with Python/05-continuity.ipynb` | Continuity, the squeeze theorem, and the intermediate value theorem |
+| `03-Calculus with Python/06-infinite-limits.ipynb` | Infinite limits and limits at infinity |
+| `03-Calculus with Python/07-derivative-rules.ipynb` | The derivative: definition, power, product, and quotient rules |
+| `03-Calculus with Python/08-chain-special-derivatives.ipynb` | The chain rule and derivatives of special functions |
+| `03-Calculus with Python/09-implicit-logarithmic.ipynb` | Implicit differentiation and logarithmic differentiation |
+| `03-Calculus with Python/10-related-rates.ipynb` | Related rates |
+| `03-Calculus with Python/11-linearization-mvt.ipynb` | Linearization, differentials, Rolle, and the mean value theorem |
+| `03-Calculus with Python/12-lhopital.ipynb` | L'Hôpital's rule |
+| `03-Calculus with Python/13-curve-sketching.ipynb` | Curve sketching |
+| `03-Calculus with Python/14-optimization.ipynb` | Optimization |
+| `03-Calculus with Python/15-newtons-method.ipynb` | Newton's method |
 
 ### Calculus II
 
 | Notebook | Title |
 |---|---|
-| `16-substitution-parts.ipynb` | Substitution and integration by parts |
-| `17-trig-partial-fractions.ipynb` | Trigonometric integrals, trigonometric substitution, and partial fractions |
-| `18-improper-integrals.ipynb` | Improper integrals |
-| `19-area-between-curves.ipynb` | Area between curves |
-| `20-volumes.ipynb` | Volumes: disks, washers, and shells |
-| `21-arc-length-surface.ipynb` | Arc length and surfaces of revolution |
-| `22-average-value-work.ipynb` | Average value and work |
-| `23-sequences.ipynb` | Sequences |
-| `24-series-tests.ipynb` | Series and convergence tests |
-| `25-taylor-series.ipynb` | Power series, Taylor series, and Maclaurin series |
-| `26-parametric-curves.ipynb` | Parametric curves |
-| `27-polar.ipynb` | Polar coordinates |
+| `03-Calculus with Python/16-substitution-parts.ipynb` | Substitution and integration by parts |
+| `03-Calculus with Python/17-trig-partial-fractions.ipynb` | Trigonometric integrals, trigonometric substitution, and partial fractions |
+| `03-Calculus with Python/18-improper-integrals.ipynb` | Improper integrals |
+| `03-Calculus with Python/19-area-between-curves.ipynb` | Area between curves |
+| `03-Calculus with Python/20-volumes.ipynb` | Volumes: disks, washers, and shells |
+| `03-Calculus with Python/21-arc-length-surface.ipynb` | Arc length and surfaces of revolution |
+| `03-Calculus with Python/22-average-value-work.ipynb` | Average value and work |
+| `03-Calculus with Python/23-sequences.ipynb` | Sequences |
+| `03-Calculus with Python/24-series-tests.ipynb` | Series and convergence tests |
+| `03-Calculus with Python/25-taylor-series.ipynb` | Power series, Taylor series, and Maclaurin series |
+| `03-Calculus with Python/26-parametric-curves.ipynb` | Parametric curves |
+| `03-Calculus with Python/27-polar.ipynb` | Polar coordinates |
 
 ### Multivariable calculus
 
 | Notebook | Title |
 |---|---|
-| `28-vectors.ipynb` | Vectors, lines, and planes |
-| `29-vector-functions.ipynb` | Vector functions |
-| `30-multivariable-functions.ipynb` | Functions of several variables and limits in the plane |
-| `31-partial-derivatives.ipynb` | Partial derivatives, the chain rule, and Clairaut's theorem |
-| `32-gradient-tangent-plane.ipynb` | The gradient, directional derivatives, and tangent planes |
-| `33-extrema-lagrange.ipynb` | Extrema and Lagrange multipliers |
-| `34-multiple-integrals.ipynb` | Double and triple integrals |
-| `35-coordinates-jacobian.ipynb` | Cylindrical coordinates, spherical coordinates, and the Jacobian |
-| `36-line-integrals-green.ipynb` | Line integrals and Green's theorem |
-| `37-stokes-divergence.ipynb` | Stokes' theorem and the divergence theorem |
+| `03-Calculus with Python/28-vectors.ipynb` | Vectors, lines, and planes |
+| `03-Calculus with Python/29-vector-functions.ipynb` | Vector functions |
+| `03-Calculus with Python/30-multivariable-functions.ipynb` | Functions of several variables and limits in the plane |
+| `03-Calculus with Python/31-partial-derivatives.ipynb` | Partial derivatives, the chain rule, and Clairaut's theorem |
+| `03-Calculus with Python/32-gradient-tangent-plane.ipynb` | The gradient, directional derivatives, and tangent planes |
+| `03-Calculus with Python/33-extrema-lagrange.ipynb` | Extrema and Lagrange multipliers |
+| `03-Calculus with Python/34-multiple-integrals.ipynb` | Double and triple integrals |
+| `03-Calculus with Python/35-coordinates-jacobian.ipynb` | Cylindrical coordinates, spherical coordinates, and the Jacobian |
+| `03-Calculus with Python/36-line-integrals-green.ipynb` | Line integrals and Green's theorem |
+| `03-Calculus with Python/37-stokes-divergence.ipynb` | Stokes' theorem and the divergence theorem |
 
 ### Differential equations
 
 | Notebook | Title |
 |---|---|
-| `38-first-order-odes.ipynb` | First-order differential equations |
-| `39-second-order-linear.ipynb` | Second-order linear homogeneous equations |
-| `40-undetermined-variation.ipynb` | Undetermined coefficients and variation of parameters |
-| `41-laplace-ivp.ipynb` | The Laplace transform and initial-value problems |
-| `42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
-| `43-series-solutions-systems.ipynb` | Series solutions and linear systems |
+| `03-Calculus with Python/38-first-order-odes.ipynb` | First-order differential equations |
+| `03-Calculus with Python/39-second-order-linear.ipynb` | Second-order linear homogeneous equations |
+| `03-Calculus with Python/40-undetermined-variation.ipynb` | Undetermined coefficients and variation of parameters |
+| `03-Calculus with Python/41-laplace-ivp.ipynb` | The Laplace transform and initial-value problems |
+| `03-Calculus with Python/42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
+| `03-Calculus with Python/43-series-solutions-systems.ipynb` | Series solutions and linear systems |
