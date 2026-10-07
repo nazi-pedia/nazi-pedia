@@ -1,8 +1,51 @@
-# Calculus with Python
+# Two paths
 
-Forty-three lessons, from functions through differential equations. Each lesson teaches the idea by hand, then recomputes the same result in SymPy and checks that the two answers agree. Every code cell already stores its output.
+This folder holds two courses. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
-## How each lesson works
+The Python path uses only the standard library. The calculus path also needs SymPy:
+
+```powershell
+py -m pip install -r requirements.txt
+```
+
+## Python Fundamentals
+
+Twenty lessons, from the first `print` through a small program and recursion. Every example uses the same rhythm.
+
+1. **Predict.** Read the code and decide what it will print.
+2. **Run.** Compare your guess with the stored output.
+3. **One change.** The next example moves a single detail.
+4. **Pitfall.** One case looks almost right and is not.
+5. **Summary.** The sentences worth keeping.
+
+Formulas are written as display mathematics. Code comments name the step you are looking at.
+
+| Notebook | Title |
+|---|---|
+| `python-fundamentals/01-programs.ipynb` | How a Python program speaks |
+| `python-fundamentals/02-names.ipynb` | Names, values, and assignment |
+| `python-fundamentals/03-numbers.ipynb` | Numbers and arithmetic |
+| `python-fundamentals/04-decisions.ipynb` | Decisions |
+| `python-fundamentals/05-strings.ipynb` | Strings: positions and slices |
+| `python-fundamentals/06-string-methods.ipynb` | String methods and f-strings |
+| `python-fundamentals/07-loops.ipynb` | Loops |
+| `python-fundamentals/08-lists.ipynb` | Lists |
+| `python-fundamentals/09-tuples.ipynb` | Tuples and unpacking |
+| `python-fundamentals/10-dictionaries.ipynb` | Dictionaries |
+| `python-fundamentals/11-sets.ipynb` | Sets |
+| `python-fundamentals/12-functions.ipynb` | Functions |
+| `python-fundamentals/13-comprehensions.ipynb` | Comprehensions |
+| `python-fundamentals/14-modules.ipynb` | Modules and the standard library |
+| `python-fundamentals/15-files.ipynb` | Files |
+| `python-fundamentals/16-exceptions.ipynb` | Exceptions |
+| `python-fundamentals/17-classes.ipynb` | Classes |
+| `python-fundamentals/18-walking-data.ipynb` | Walking through data |
+| `python-fundamentals/19-small-program.ipynb` | A small program, built one step at a time |
+| `python-fundamentals/20-recursion.ipynb` | Recursion |
+
+## Calculus with Python
+
+Forty-three lessons, from functions through differential equations. Each lesson teaches the idea by hand, then recomputes the same result in SymPy and checks that the two answers agree.
 
 1. State the definition and the problem.
 2. Solve it by hand, line by line, in display mathematics.
@@ -10,18 +53,6 @@ Forty-three lessons, from functions through differential equations. Each lesson 
 4. Close with one pitfall and a short summary.
 
 An indefinite integral is rechecked by differentiation, because SymPy omits the constant of integration.
-
-## Run the notebooks
-
-Python 3 and SymPy are enough.
-
-```powershell
-py -m pip install -r requirements.txt
-```
-
-Open the notebooks in Jupyter. To recompute, use Restart and Run All.
-
-## Path through the course
 
 ### Calculus I
 
