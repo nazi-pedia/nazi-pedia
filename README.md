@@ -1,8 +1,8 @@
-# Two paths
+# Three paths
 
-This folder holds two courses. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+This folder holds three courses. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
-The Python path uses only the standard library. The calculus path also needs SymPy:
+The Python path uses only the standard library. NumPy and the calculus path need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -42,6 +42,37 @@ Formulas are written as display mathematics. Code comments name the step you are
 | `python-fundamentals/18-walking-data.ipynb` | Walking through data |
 | `python-fundamentals/19-small-program.ipynb` | A small program, built one step at a time |
 | `python-fundamentals/20-recursion.ipynb` | Recursion |
+
+## NumPy
+
+Sixteen lessons, from the first array through a small numerical study. The rhythm matches the Python path, and every formula is computed by hand before NumPy repeats it.
+
+1. **Predict** the values, the shape, or the hand result.
+2. **Run** and compare with the stored output.
+3. **One change** shows what that detail controls.
+4. **A pitfall** is a case that looks almost right.
+5. A **summary** keeps the rule.
+
+Broadcasting, reductions, and matrix algebra are written as display mathematics. Every code cell is commented.
+
+| Notebook | Title |
+|---|---|
+| `numpy-fundamentals/01-creating-arrays.ipynb` | How an array is different from a list |
+| `numpy-fundamentals/02-shape-dtype.ipynb` | Shape, dtype, and reshape |
+| `numpy-fundamentals/03-indexing.ipynb` | Indexing and slicing |
+| `numpy-fundamentals/04-masks.ipynb` | Boolean masks and fancy indexing |
+| `numpy-fundamentals/05-vectorized.ipynb` | Vectorized arithmetic |
+| `numpy-fundamentals/06-broadcasting.ipynb` | Broadcasting |
+| `numpy-fundamentals/07-reductions.ipynb` | Reductions along an axis |
+| `numpy-fundamentals/08-ufuncs.ipynb` | Universal functions |
+| `numpy-fundamentals/09-missing.ipynb` | Missing values |
+| `numpy-fundamentals/10-sorting.ipynb` | Sorting and uniqueness |
+| `numpy-fundamentals/11-combining.ipynb` | Stacking and splitting |
+| `numpy-fundamentals/12-views-copies.ipynb` | Views and copies |
+| `numpy-fundamentals/13-random.ipynb` | Random numbers |
+| `numpy-fundamentals/14-vectors.ipynb` | Vector algebra |
+| `numpy-fundamentals/15-matrices.ipynb` | Matrix algebra |
+| `numpy-fundamentals/16-numerical-study.ipynb` | A numerical study, built one step at a time |
 
 ## Calculus with Python
 
