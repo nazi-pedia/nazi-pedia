@@ -1,87 +1,87 @@
-# حسابان با پایتون
+# Calculus with Python
 
-چهل و سه درس، از تابع تا معادلهٔ دیفرانسیل. هر درس اول مطلب را با حل دستی می‌گوید، بعد همان جواب را با SymPy دوباره حساب می‌کند و برابری را بررسی می‌کند. خروجی هر خانه از پیش ذخیره شده است.
+Forty-three lessons, from functions through differential equations. Each lesson teaches the idea by hand, then recomputes the same result in SymPy and checks that the two answers agree. Every code cell already stores its output.
 
-## روش هر درس
+## How each lesson works
 
-۱. تعریف و صورت مسئله.
-۲. حل ریاضی، خط به خط.
-۳. بازبینی با پایتون: جواب دستی و جواب SymPy چاپ می‌شوند و اختلافشان باید صفر باشد.
-۴. یک نکته، و جمع‌بندی کوتاه.
+1. State the definition and the problem.
+2. Solve it by hand, line by line, in display mathematics.
+3. Recheck with Python. The hand answer and the SymPy answer are printed, and their difference must be zero.
+4. Close with one pitfall and a short summary.
 
-اگر انتگرال نامعین باشد، بازبینی با مشتق‌گیری است، چون ثابت انتگرال در SymPy نوشته نمی‌شود.
+An indefinite integral is rechecked by differentiation, because SymPy omits the constant of integration.
 
-## اجرا
+## Run the notebooks
 
-پایتون ۳ و SymPy کافی است.
+Python 3 and SymPy are enough.
 
 ```powershell
 py -m pip install -r requirements.txt
 ```
 
-دفترچه‌ها را با Jupyter باز کنید. برای حساب دوباره، Restart و Run All.
+Open the notebooks in Jupyter. To recompute, use Restart and Run All.
 
-## مسیر دوره
+## Path through the course
 
-### ریاضی عمومی ۱
+### Calculus I
 
-| دفترچه | عنوان |
+| Notebook | Title |
 |---|---|
-| `01-functions.ipynb` | تابع: دامنه، برد، ترکیب، وارون، چندضابطه‌ای |
-| `02-exponential-log-trigonometric.ipynb` | نمایی، لگاریتم، مثلثاتی و وارون مثلثاتی |
-| `03-rational-asymptotes.ipynb` | تابع گویا و مجانب |
-| `04-limits.ipynb` | حد و قانون‌های حد |
-| `05-continuity.ipynb` | پیوستگی، فشردگی، مقدار میانی |
-| `06-infinite-limits.ipynb` | حد نامتناهی و حد در بی‌نهایت |
-| `07-derivative-rules.ipynb` | مشتق: تعریف، توان، ضرب، خارج‌قسمت |
-| `08-chain-special-derivatives.ipynb` | قاعدهٔ زنجیره‌ای و مشتق تابع‌های خاص |
-| `09-implicit-logarithmic.ipynb` | مشتق ضمنی و مشتق لگاریتمی |
-| `10-related-rates.ipynb` | آهنگ‌های مرتبط |
-| `11-linearization-mvt.ipynb` | خطی‌سازی، دیفرانسیل، رول و مقدار میانگین |
-| `12-lhopital.ipynb` | قاعدهٔ هوپیتال |
-| `13-curve-sketching.ipynb` | رسم نمودار |
-| `14-optimization.ipynb` | بهینه‌سازی |
-| `15-newtons-method.ipynb` | روش نیوتن |
+| `01-functions.ipynb` | Functions: domain, range, composition, inverse, piecewise |
+| `02-exponential-log-trigonometric.ipynb` | Exponential, logarithmic, trigonometric, and inverse trigonometric functions |
+| `03-rational-asymptotes.ipynb` | Rational functions and asymptotes |
+| `04-limits.ipynb` | Limits and the limit laws |
+| `05-continuity.ipynb` | Continuity, the squeeze theorem, and the intermediate value theorem |
+| `06-infinite-limits.ipynb` | Infinite limits and limits at infinity |
+| `07-derivative-rules.ipynb` | The derivative: definition, power, product, and quotient rules |
+| `08-chain-special-derivatives.ipynb` | The chain rule and derivatives of special functions |
+| `09-implicit-logarithmic.ipynb` | Implicit differentiation and logarithmic differentiation |
+| `10-related-rates.ipynb` | Related rates |
+| `11-linearization-mvt.ipynb` | Linearization, differentials, Rolle, and the mean value theorem |
+| `12-lhopital.ipynb` | L'Hôpital's rule |
+| `13-curve-sketching.ipynb` | Curve sketching |
+| `14-optimization.ipynb` | Optimization |
+| `15-newtons-method.ipynb` | Newton's method |
 
-### ریاضی عمومی ۲
+### Calculus II
 
-| دفترچه | عنوان |
+| Notebook | Title |
 |---|---|
-| `16-substitution-parts.ipynb` | جانشینی و جزءبه‌جزء |
-| `17-trig-partial-fractions.ipynb` | انتگرال مثلثاتی، جانشینی مثلثاتی، کسرهای جزئی |
-| `18-improper-integrals.ipynb` | انتگرال ناسره |
-| `19-area-between-curves.ipynb` | مساحت بین دو خم |
-| `20-volumes.ipynb` | حجم: قرص، واشر، پوسته |
-| `21-arc-length-surface.ipynb` | طول قوس و سطح دوار |
-| `22-average-value-work.ipynb` | مقدار میانگین و کار |
-| `23-sequences.ipynb` | دنباله |
-| `24-series-tests.ipynb` | سری و آزمون‌های همگرایی |
-| `25-taylor-series.ipynb` | سری توانی، تیلور و مکلورن |
-| `26-parametric-curves.ipynb` | خم پارامتری |
-| `27-polar.ipynb` | مختصات قطبی |
+| `16-substitution-parts.ipynb` | Substitution and integration by parts |
+| `17-trig-partial-fractions.ipynb` | Trigonometric integrals, trigonometric substitution, and partial fractions |
+| `18-improper-integrals.ipynb` | Improper integrals |
+| `19-area-between-curves.ipynb` | Area between curves |
+| `20-volumes.ipynb` | Volumes: disks, washers, and shells |
+| `21-arc-length-surface.ipynb` | Arc length and surfaces of revolution |
+| `22-average-value-work.ipynb` | Average value and work |
+| `23-sequences.ipynb` | Sequences |
+| `24-series-tests.ipynb` | Series and convergence tests |
+| `25-taylor-series.ipynb` | Power series, Taylor series, and Maclaurin series |
+| `26-parametric-curves.ipynb` | Parametric curves |
+| `27-polar.ipynb` | Polar coordinates |
 
-### حسابان چندمتغیره
+### Multivariable calculus
 
-| دفترچه | عنوان |
+| Notebook | Title |
 |---|---|
-| `28-vectors.ipynb` | بردار، خط و صفحه |
-| `29-vector-functions.ipynb` | تابع برداری |
-| `30-multivariable-functions.ipynb` | تابع چندمتغیره و حد در صفحه |
-| `31-partial-derivatives.ipynb` | مشتق جزئی، زنجیره و کلرو |
-| `32-gradient-tangent-plane.ipynb` | گرادیان، مشتق سویی و صفحهٔ مماس |
-| `33-extrema-lagrange.ipynb` | اکسترمم و ضرایب لاگرانژ |
-| `34-multiple-integrals.ipynb` | انتگرال دوگانه و سه‌گانه |
-| `35-coordinates-jacobian.ipynb` | استوانه‌ای، کروی و ژاکوبی |
-| `36-line-integrals-green.ipynb` | انتگرال خطی و قضیهٔ گرین |
-| `37-stokes-divergence.ipynb` | استوکس و دیورژانس |
+| `28-vectors.ipynb` | Vectors, lines, and planes |
+| `29-vector-functions.ipynb` | Vector functions |
+| `30-multivariable-functions.ipynb` | Functions of several variables and limits in the plane |
+| `31-partial-derivatives.ipynb` | Partial derivatives, the chain rule, and Clairaut's theorem |
+| `32-gradient-tangent-plane.ipynb` | The gradient, directional derivatives, and tangent planes |
+| `33-extrema-lagrange.ipynb` | Extrema and Lagrange multipliers |
+| `34-multiple-integrals.ipynb` | Double and triple integrals |
+| `35-coordinates-jacobian.ipynb` | Cylindrical coordinates, spherical coordinates, and the Jacobian |
+| `36-line-integrals-green.ipynb` | Line integrals and Green's theorem |
+| `37-stokes-divergence.ipynb` | Stokes' theorem and the divergence theorem |
 
-### معادلات دیفرانسیل
+### Differential equations
 
-| دفترچه | عنوان |
+| Notebook | Title |
 |---|---|
-| `38-first-order-odes.ipynb` | معادلهٔ دیفرانسیل مرتبهٔ اول |
-| `39-second-order-linear.ipynb` | معادلهٔ خطی مرتبهٔ دوم همگن |
-| `40-undetermined-variation.ipynb` | ضرایب نامعین و تغییر پارامتر |
-| `41-laplace-ivp.ipynb` | لاپلاس و مسئلهٔ مقدار اولیه |
-| `42-heaviside-dirac-convolution.ipynb` | پله، ضربه و پیچش |
-| `43-series-solutions-systems.ipynb` | حل سری و دستگاه خطی |
+| `38-first-order-odes.ipynb` | First-order differential equations |
+| `39-second-order-linear.ipynb` | Second-order linear homogeneous equations |
+| `40-undetermined-variation.ipynb` | Undetermined coefficients and variation of parameters |
+| `41-laplace-ivp.ipynb` | The Laplace transform and initial-value problems |
+| `42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
+| `43-series-solutions-systems.ipynb` | Series solutions and linear systems |
