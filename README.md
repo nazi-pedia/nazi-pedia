@@ -1,18 +1,19 @@
-# Five paths
+# Six paths
 
-The tutorial is five numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is six numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
-01-Python Fundamentals/     20 lessons, standard library only
-02-Numpy Fundamentals/      16 lessons, needs NumPy
-03-Calculus with Python/    43 lessons, needs SymPy
-04-Linear Regression/       25 lessons, needs NumPy, SymPy, and SciPy
-05-Polynomial Regression/   16 lessons, needs NumPy, SymPy, and SciPy
+01-Python Fundamentals/          20 lessons, standard library only
+02-Numpy Fundamentals/           16 lessons, needs NumPy
+03-Calculus with Python/         43 lessons, needs SymPy
+04-Linear Regression/            25 lessons, needs NumPy, SymPy, and SciPy
+05-Polynomial Regression/        16 lessons, needs NumPy, SymPy, and SciPy
+06-Support Vector Machines (SVM)/ 16 lessons, standard library only
 README.md
 requirements.txt
 ```
 
-`01` uses only the Python standard library. `02`, `03`, `04`, and `05` need the packages in `requirements.txt`:
+`01` and `06` use only the Python standard library. `02`, `03`, `04`, and `05` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -226,3 +227,33 @@ A polynomial regression is linear in its coefficients, so the normal equations a
 | `05-Polynomial Regression/14-lack-of-fit.ipynb` | Lack of fit and pure error |
 | `05-Polynomial Regression/15-two-variables.ipynb` | A polynomial in two inputs |
 | `05-Polynomial Regression/16-full-study.ipynb` | A complete study |
+
+## 06. Support Vector Machines
+
+Sixteen lessons, from a signed score to kernels and a single training step. The prose stays close to the arithmetic. Each example is proved before it is coded.
+
+1. State the rule or the optimization problem in display mathematics.
+2. Solve a small numerical case by hand, including the constraints.
+3. Recheck with Python. The hand answer and the computed answer must match.
+4. Close with one pitfall and the sentence worth keeping.
+
+The hard-margin street, the hinge, and the kernels are calculated directly. No solver library is required. A multiplier is trusted only after it rebuilds $\mathbf{w}$ and satisfies complementary slackness.
+
+| Notebook | Title |
+|---|---|
+| `06-Support Vector Machines (SVM)/01-signed-scores.ipynb` | A score, then a sign |
+| `06-Support Vector Machines (SVM)/02-distance-and-margin.ipynb` | How far is a point from the line? |
+| `06-Support Vector Machines (SVM)/03-widest-street.ipynb` | The widest empty street |
+| `06-Support Vector Machines (SVM)/04-three-point-fit.ipynb` | Three points, solved by hand |
+| `06-Support Vector Machines (SVM)/05-support-vectors.ipynb` | Support vectors are the points that hold the street |
+| `06-Support Vector Machines (SVM)/06-lagrange-kkt.ipynb` | Lagrange multipliers and the KKT conditions |
+| `06-Support Vector Machines (SVM)/07-the-dual.ipynb` | The dual problem |
+| `06-Support Vector Machines (SVM)/08-recover-weights.ipynb` | From multipliers back to a prediction |
+| `06-Support Vector Machines (SVM)/09-hinge-and-slack.ipynb` | Pay for a point inside the street |
+| `06-Support Vector Machines (SVM)/10-soft-margin-line.ipynb` | Four points on a line |
+| `06-Support Vector Machines (SVM)/11-feature-maps.ipynb` | A line in a bigger space |
+| `06-Support Vector Machines (SVM)/12-xor-and-kernels.ipynb` | XOR, separated by a product |
+| `06-Support Vector Machines (SVM)/13-rbf-kernel.ipynb` | A kernel from distance |
+| `06-Support Vector Machines (SVM)/14-one-versus-rest.ipynb` | More than two labels |
+| `06-Support Vector Machines (SVM)/15-pegasos-step.ipynb` | One training step |
+| `06-Support Vector Machines (SVM)/16-full-study.ipynb` | Full study: from a score to a kernel |
