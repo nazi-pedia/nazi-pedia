@@ -18,7 +18,7 @@ requirements.txt
 py -m pip install -r requirements.txt
 ```
 
-## Python Fundamentals
+## 01. Python Fundamentals
 
 Twenty lessons, from the first `print` through a small program and recursion. Every example uses the same rhythm.
 
@@ -53,7 +53,7 @@ Formulas are written as display mathematics. Code comments name the step you are
 | `01-Python Fundamentals/19-small-program.ipynb` | A small program, built one step at a time |
 | `01-Python Fundamentals/20-recursion.ipynb` | Recursion |
 
-## NumPy
+## 02. NumPy
 
 Sixteen lessons, from the first array through a small numerical study. The rhythm matches the Python path, and every formula is computed by hand before NumPy repeats it.
 
@@ -84,7 +84,7 @@ Broadcasting, reductions, and matrix algebra are written as display mathematics.
 | `02-Numpy Fundamentals/15-matrices.ipynb` | Matrix algebra |
 | `02-Numpy Fundamentals/16-numerical-study.ipynb` | A numerical study, built one step at a time |
 
-## Calculus with Python
+## 03. Calculus with Python
 
 Forty-three lessons, from functions through differential equations. Each lesson teaches the idea by hand, then recomputes the same result in SymPy and checks that the two answers agree.
 
@@ -158,7 +158,7 @@ An indefinite integral is rechecked by differentiation, because SymPy omits the 
 | `03-Calculus with Python/42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
 | `03-Calculus with Python/43-series-solutions-systems.ipynb` | Series solutions and linear systems |
 
-## Linear Regression
+## 04. Linear Regression
 
 Twenty-five lessons, from the prediction line through a complete numerical study. Every example is solved by hand in display mathematics. Python then repeats the arithmetic, and the two answers are required to agree.
 
@@ -197,7 +197,7 @@ When a loss is differentiated, the derivative is written out, and SymPy confirms
 | `04-Linear Regression/24-weighted-least-squares.ipynb` | Weighted least squares |
 | `04-Linear Regression/25-full-study.ipynb` | A complete study |
 
-## Polynomial Regression
+## 05. Polynomial Regression
 
 Sixteen lessons, from the meaning of a polynomial coefficient through interpolation, conditioning, lack of fit, and a complete study. The method matches the linear-regression path.
 
