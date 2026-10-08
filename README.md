@@ -1,16 +1,17 @@
-# Three paths
+# Four paths
 
-The tutorial is three numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is four numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Python Fundamentals/     20 lessons, standard library only
 02-Numpy Fundamentals/      16 lessons, needs NumPy
 03-Calculus with Python/    43 lessons, needs SymPy
+04-Linear Regression/       25 lessons, needs NumPy, SymPy, and SciPy
 README.md
 requirements.txt
 ```
 
-`01` uses only the Python standard library. `02` and `03` need the packages in `requirements.txt`:
+`01` uses only the Python standard library. `02`, `03`, and `04` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -155,3 +156,42 @@ An indefinite integral is rechecked by differentiation, because SymPy omits the 
 | `03-Calculus with Python/41-laplace-ivp.ipynb` | The Laplace transform and initial-value problems |
 | `03-Calculus with Python/42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
 | `03-Calculus with Python/43-series-solutions-systems.ipynb` | Series solutions and linear systems |
+
+## Linear Regression
+
+Twenty-five lessons, from the prediction line through a complete numerical study. Every example is solved by hand in display mathematics. Python then repeats the arithmetic, and the two answers are required to agree.
+
+1. State the definition and derive the result.
+2. Work the numbers by hand, line by line.
+3. Recheck with Python. The hand answer and the computed answer are printed, and they must match.
+4. Close with one pitfall and a short summary.
+
+When a loss is differentiated, the derivative is written out, and SymPy confirms that derivative. Inference uses SciPy's $t$ quantiles.
+
+| Notebook | Title |
+|---|---|
+| `04-Linear Regression/01-prediction-line.ipynb` | The prediction line |
+| `04-Linear Regression/02-residuals.ipynb` | Residuals and the sum of squares |
+| `04-Linear Regression/03-least-squares-formulas.ipynb` | Deriving the slope and the intercept |
+| `04-Linear Regression/04-complete-fit.ipynb` | A complete fit, with every sum written out |
+| `04-Linear Regression/05-r-squared.ipynb` | The decomposition and $R^2$ |
+| `04-Linear Regression/06-correlation.ipynb` | Correlation and the slope |
+| `04-Linear Regression/07-through-the-origin.ipynb` | Regression through the origin |
+| `04-Linear Regression/08-design-matrix.ipynb` | The design matrix |
+| `04-Linear Regression/09-multiple-regression.ipynb` | Multiple regression |
+| `04-Linear Regression/10-projection.ipynb` | Projection and the hat matrix |
+| `04-Linear Regression/11-gauss-markov.ipynb` | The Gauss–Markov model |
+| `04-Linear Regression/12-standard-errors.ipynb` | Estimating the error variance |
+| `04-Linear Regression/13-inference.ipynb` | Tests and confidence intervals |
+| `04-Linear Regression/14-prediction-intervals.ipynb` | Intervals for a mean response and for a new observation |
+| `04-Linear Regression/15-indicator-variables.ipynb` | Indicator variables |
+| `04-Linear Regression/16-polynomials.ipynb` | Polynomial regression |
+| `04-Linear Regression/17-interactions.ipynb` | Interactions |
+| `04-Linear Regression/18-centering.ipynb` | Centering |
+| `04-Linear Regression/19-collinearity.ipynb` | Collinearity |
+| `04-Linear Regression/20-influence.ipynb` | Leverage and Cook's distance |
+| `04-Linear Regression/21-diagnostics.ipynb` | Residual patterns |
+| `04-Linear Regression/22-gradient-descent.ipynb` | Gradient descent |
+| `04-Linear Regression/23-ridge.ipynb` | Ridge regression |
+| `04-Linear Regression/24-weighted-least-squares.ipynb` | Weighted least squares |
+| `04-Linear Regression/25-full-study.ipynb` | A complete study |
