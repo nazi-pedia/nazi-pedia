@@ -1,17 +1,18 @@
-# Four paths
+# Five paths
 
-The tutorial is four numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is five numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Python Fundamentals/     20 lessons, standard library only
 02-Numpy Fundamentals/      16 lessons, needs NumPy
 03-Calculus with Python/    43 lessons, needs SymPy
 04-Linear Regression/       25 lessons, needs NumPy, SymPy, and SciPy
+05-Polynomial Regression/   16 lessons, needs NumPy, SymPy, and SciPy
 README.md
 requirements.txt
 ```
 
-`01` uses only the Python standard library. `02`, `03`, and `04` need the packages in `requirements.txt`:
+`01` uses only the Python standard library. `02`, `03`, `04`, and `05` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -195,3 +196,33 @@ When a loss is differentiated, the derivative is written out, and SymPy confirms
 | `04-Linear Regression/23-ridge.ipynb` | Ridge regression |
 | `04-Linear Regression/24-weighted-least-squares.ipynb` | Weighted least squares |
 | `04-Linear Regression/25-full-study.ipynb` | A complete study |
+
+## Polynomial Regression
+
+Sixteen lessons, from the meaning of a polynomial coefficient through interpolation, conditioning, lack of fit, and a complete study. The method matches the linear-regression path.
+
+1. State the definition and derive the result.
+2. Work the numbers by hand, line by line.
+3. Recheck with Python. The hand answer and the computed answer are printed, and they must match.
+4. Close with one pitfall and a short summary.
+
+A polynomial regression is linear in its coefficients, so the normal equations are the same ones as in path `04`. The new material is the choice of degree, the shape of the basis, and what a perfect fit does and does not mean.
+
+| Notebook | Title |
+|---|---|
+| `05-Polynomial Regression/01-polynomial-model.ipynb` | A polynomial is linear in its coefficients |
+| `05-Polynomial Regression/02-vandermonde.ipynb` | The Vandermonde matrix |
+| `05-Polynomial Regression/03-quadratic-fit.ipynb` | Fitting a quadratic by hand |
+| `05-Polynomial Regression/04-the-line.ipynb` | The straight line on the same curve |
+| `05-Polynomial Regression/05-r-squared.ipynb` | $R^2$ for a polynomial |
+| `05-Polynomial Regression/06-extra-sum-of-squares.ipynb` | The extra sum of squares |
+| `05-Polynomial Regression/07-cubic.ipynb` | The cubic hidden in the residuals |
+| `05-Polynomial Regression/08-shifting-origin.ipynb` | Shifting the origin |
+| `05-Polynomial Regression/09-orthogonal-ridge.ipynb` | Orthogonal polynomials, then ridge |
+| `05-Polynomial Regression/10-inference.ipynb` | Standard errors and tests |
+| `05-Polynomial Regression/11-prediction.ipynb` | Prediction from a polynomial |
+| `05-Polynomial Regression/12-interpolation.ipynb` | Interpolation and the Runge warning |
+| `05-Polynomial Regression/13-conditioning.ipynb` | The condition of the monomial basis |
+| `05-Polynomial Regression/14-lack-of-fit.ipynb` | Lack of fit and pure error |
+| `05-Polynomial Regression/15-two-variables.ipynb` | A polynomial in two inputs |
+| `05-Polynomial Regression/16-full-study.ipynb` | A complete study |
