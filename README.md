@@ -1,6 +1,6 @@
-# Ten paths
+# Eleven paths
 
-The tutorial is ten numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is eleven numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -13,11 +13,12 @@ The tutorial is ten numbered folders, taken in order. Each notebook already stor
 08-Support Vector Machines (SVM)/ 16 lessons, standard library only
 09-Decision Trees/                16 lessons, needs Matplotlib
 10-k-Nearest Neighbors (k-NN)/    16 lessons, needs Matplotlib
+11-Perceptron/                     16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, and `10` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, and `11` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -383,3 +384,33 @@ The memory is three busy mornings and three quiet ones, so a global majority can
 | `10-k-Nearest Neighbors (k-NN)/14-the-procedure.ipynb` | One procedure, every answer we already know |
 | `10-k-Nearest Neighbors (k-NN)/15-zero-distance.ipynb` | Distance zero is a stored copy |
 | `10-k-Nearest Neighbors (k-NN)/16-full-study.ipynb` | Today, worked from the table |
+
+## 11. Perceptron
+
+Sixteen lessons, from reading a score to the update rule, the convergence bound, and a pocket for a paper no line can fit. Every update is written by hand before Python repeats it. Matplotlib draws the lines; no perceptron library is required.
+
+1. State the rule and prove the small result.
+2. Work the same points by hand, including the fractions.
+3. Recheck with Python. The hand answer and the computed answer must match.
+4. Close with one pitfall and the sentence worth keeping.
+
+Pass is $+1$ and fail is $-1$. A point is correct only when its margin is positive. On one measurement the walk uses $5$ updates and the bound promises at most $10$. In the plane, three papers reach $2x_1 + x_2 - 1$ in three updates, a second order reaches a different line, and neither line is the widest.
+
+| Notebook | Title |
+|---|---|
+| `11-Perceptron/01-read-a-score.ipynb` | Read a score |
+| `11-Perceptron/02-one-update.ipynb` | One update |
+| `11-Perceptron/03-why-a-bias.ipynb` | Why a bias is there |
+| `11-Perceptron/04-five-updates.ipynb` | Five updates on a line |
+| `11-Perceptron/05-two-scores.ipynb` | Two scores, one line |
+| `11-Perceptron/06-the-first-update.ipynb` | The first update in the plane |
+| `11-Perceptron/07-three-updates.ipynb` | Three updates reach a line |
+| `11-Perceptron/08-the-margin-grows.ipynb` | The margin grows by a square |
+| `11-Perceptron/09-why-it-stops.ipynb` | Why the updates stop |
+| `11-Perceptron/10-step-size.ipynb` | The step size |
+| `11-Perceptron/11-the-other-order.ipynb` | The other order |
+| `11-Perceptron/12-not-the-widest.ipynb` | Not the widest line |
+| `11-Perceptron/13-xor.ipynb` | Four gates with no line |
+| `11-Perceptron/14-the-loss.ipynb` | The loss can rise |
+| `11-Perceptron/15-the-pocket.ipynb` | Keep the best weights seen |
+| `11-Perceptron/16-full-study.ipynb` | One line, from zero |
