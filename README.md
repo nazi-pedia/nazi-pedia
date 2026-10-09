@@ -32,15 +32,9 @@ py -m pip install -r requirements.txt
 
 ## 01. Jupyter Notebook
 
-Sixteen lessons, from the first cell to a saved morning note. The page comes before the language. Path 02 teaches Python. Here every code cell is short, the arithmetic is done by hand first, and the output under the cell is the answer key.
+Sixteen lessons on the notebook as a tool: a stack of cells, a kernel that remembers names, and an output that can go stale. The language itself is path 02. Here each code cell is a short calculation whose hand result is already written on the page, and the stored output is the answer key.
 
-1. Read the prediction and the hand result.
-2. Compare them with the stored output.
-3. The next example changes one detail.
-4. One pitfall shows a cell that looks quiet, stale, or easy to run twice.
-5. A summary keeps the rule.
-
-The numbers stay small: piles of 2, 3, and 4 cups, then a morning when Ada, Grace, Alan, and Linus read 4, 6, 3, and 5 pages. Restart and Run All uses only the Python standard library.
+The numbers stay small on purpose. Three piles of 2, 3, and 4 cups total 9 and average 3. One morning Ada, Grace, Alan, and Linus read 4, 6, 3, and 5 pages, total 18 and mean $9/2$. Path 04 reopens that morning as a pandas column. The traps are local to the notebook: a cell run twice, a name that died when the kernel restarted, and a page whose visual order is not the order the kernel executed. Restart and Run All uses only the standard library.
 
 | Notebook | Title |
 |---|---|
@@ -63,15 +57,9 @@ The numbers stay small: piles of 2, 3, and 4 cups, then a morning when Ada, Grac
 
 ## 02. Python Fundamentals
 
-Open the Jupyter Notebook path first. These twenty lessons teach the language, from the first `print` through a small program and recursion. Every example uses the same rhythm.
+Twenty lessons on the language, taken after path 01. They run from the first `print` and assignment through strings, collections, functions, files, exceptions, classes, and a function that calls itself.
 
-1. **Predict.** Read the code and decide what it will print.
-2. **Run.** Compare your guess with the stored output.
-3. **One change.** The next example moves a single detail.
-4. **Pitfall.** One case looks almost right and is not.
-5. **Summary.** The sentences worth keeping.
-
-Formulas are written as display mathematics. Code comments name the step you are looking at.
+Every example asks for a prediction, then shows the stored output, then moves a single detail. Arithmetic is display mathematics. Comments name the step. The small program near the end is assembled from pieces the earlier lessons already ran, so the last notebooks are a reading of the language rather than a new syntax list. Only the standard library is used.
 
 | Notebook | Title |
 |---|---|
@@ -98,15 +86,9 @@ Formulas are written as display mathematics. Code comments name the step you are
 
 ## 03. NumPy
 
-Sixteen lessons, from the first array through a small numerical study. The rhythm matches the Python path, and every formula is computed by hand before NumPy repeats it.
+Sixteen lessons on the array as one rectangular block of a single dtype. A Python list can hold mixed objects. An array of three numbers has shape `(3,)`, and the comma is the difference between a one-axis array and the integer `(3)`.
 
-1. **Predict** the values, the shape, or the hand result.
-2. **Run** and compare with the stored output.
-3. **One change** shows what that detail controls.
-4. **A pitfall** is a case that looks almost right.
-5. A **summary** keeps the rule.
-
-Broadcasting, reductions, and matrix algebra are written as display mathematics. Every code cell is commented.
+Broadcasting, reductions along an axis, and matrix products are written as display mathematics before NumPy repeats them. Indexing, masks, and sorts stay exact on small integer tables. A slice can be a view that writes back into the original block, which is why views and copies have a lesson of their own. The closing study stacks those operations into one numerical argument.
 
 | Notebook | Title |
 |---|---|
@@ -129,7 +111,9 @@ Broadcasting, reductions, and matrix algebra are written as display mathematics.
 
 ## 04. Pandas
 
-Eighteen lessons on one reading desk. Monday is the morning note from path 01: Ada 4, Grace 6, Alan 3, Linus 5, summing to 18. The week of 5–9 October 2026 sums to 89 pages. Ada read 20, Grace 30, Alan 16, and Linus 23. Alan's Tuesday is the number 0. A blank Friday is a different object: the known total becomes 84, and filling that blank with 0 leaves Linus's sum at 18 while his day count changes from 4 to 5. Five notebook purchases bill 38. Edsger is on the roster and bought nothing. The label, not the position, is what each lesson adds, joins, and sorts.
+Eighteen lessons on one reading desk, the week of 5–9 October 2026. Monday is the morning note from path 01: Ada 4, Grace 6, Alan 3, Linus 5, sum 18, mean $9/2$. A second series stores Linus first; addition still joins Linus with Linus, because the index is the label.
+
+The week sums to 89 pages: Ada 20, Grace 30, Alan 16, Linus 23. Alan's Tuesday is the recorded number 0. Blanking Linus's Friday leaves 84 known pages. `fillna(0)` keeps his sum at 18 and changes his recorded-day count from 4 to 5, so the mean moves from $9/2$ to $18/5$. Ada's Monday through Wednesday is $4+5+3=12$. `loc` includes the end label Wednesday; `iloc[0, 0:2]` stops before it and returns 9. Five notebook purchases bill 38, and Ada's share is 11. Edsger is on the roster and has no purchase. The grid notebook is priced at 4 and never enters the inner join. A second week of 34 pages stacks under the first for 123. Default `groupby` sorts labels alphabetically, and the default rank gives the busiest day, Wednesday, rank 5.
 
 | Notebook | Title |
 |---|---|
@@ -154,14 +138,9 @@ Eighteen lessons on one reading desk. Monday is the morning note from path 01: A
 
 ## 05. Calculus with Python
 
-Forty-three lessons, from functions through differential equations. Each lesson teaches the idea by hand, then recomputes the same result in SymPy and checks that the two answers agree.
+Forty-three lessons of calculus, rechecked in SymPy. The path is the syllabus: functions through Newton's method, then integrals and series, then vectors through Stokes and the divergence theorem, then first-order equations through Laplace transforms and linear systems.
 
-1. State the definition and the problem.
-2. Solve it by hand, line by line, in display mathematics.
-3. Recheck with Python. The hand answer and the SymPy answer are printed, and their difference must be zero.
-4. Close with one pitfall and a short summary.
-
-An indefinite integral is rechecked by differentiation, because SymPy omits the constant of integration.
+Each lesson states the definition, solves one example in display mathematics, and prints the hand answer beside the SymPy answer. Those two results are required to agree. An indefinite integral is checked by differentiating it, because SymPy omits the constant of integration. The four blocks below are Calculus I, Calculus II, multivariable calculus, and differential equations.
 
 ### Calculus I
 
@@ -228,15 +207,9 @@ An indefinite integral is rechecked by differentiation, because SymPy omits the 
 
 ## 06. Data Visualization
 
-Sixteen lessons, from one question through lines, bars, distributions, heatmaps, and a one-week report. Every chart is drawn with Matplotlib, and the picture is stored in the notebook.
+Sixteen lessons on turning one computed number into a mark. The table is one week at North Lab: Ada finished 27 jobs, Grace 34, Alan 20, and Linus 29. Those four totals are 110, and the five daily totals are also 110. Each day is exactly two jobs above the day before.
 
-1. Ask one question.
-2. Compute the number that answers it.
-3. Encode that number as length, position, or color.
-4. Title the finding and label the units.
-5. Read the sentence back from the picture, and name one way it could be misread.
-
-The running example is one week at North Lab. The same table becomes a ranking, a time line, and a heatmap. Each picture is allowed to answer only the question it was built for.
+Matplotlib draws every picture, and the picture is stored in the notebook. Length encodes an amount, position encodes time, and color names a series. A title states the finding and the axis states the unit. The same 110 can be a ranking, a line, or a heatmap, and each picture is built for one question. Later lessons show a sort, a shared scale, or a truncated axis changing the sentence a reader takes from that table. A boxplot's five-number summary is computed before the whisker is drawn.
 
 | Notebook | Title |
 |---|---|
@@ -259,14 +232,9 @@ The running example is one week at North Lab. The same table becomes a ranking, 
 
 ## 07. Linear Regression
 
-Twenty-five lessons, from the prediction line through a complete numerical study. Every example is solved by hand in display mathematics. Python then repeats the arithmetic, and the two answers are required to agree.
+Twenty-five lessons on the least-squares line and the linear model built around it. Every coefficient is derived from the normal equations before NumPy, SymPy, or SciPy repeats the arithmetic, and the two answers have to match. When a loss is differentiated, the derivative is written out and SymPy confirms it. Inference uses SciPy's $t$ quantiles.
 
-1. State the definition and derive the result.
-2. Work the numbers by hand, line by line.
-3. Recheck with Python. The hand answer and the computed answer are printed, and they must match.
-4. Close with one pitfall and a short summary.
-
-When a loss is differentiated, the derivative is written out, and SymPy confirms that derivative. Inference uses SciPy's $t$ quantiles.
+On the points $(1,2)$, $(2,3)$, $(3,5)$ the intercept is $1/3$, the slope is $3/2$, and the residual sum of squares is $1/6$. A five-point table fits exactly as $1+2x$ with residual sum of squares 4 and $R^2 = 10/11$. Rounding those fitted values can pretend the residual sum of squares is 0. Later lessons keep the same equations and change the columns: indicators, interactions, a centered predictor, collinear columns, a ridge penalty, and weights. The designs stay small enough that $X^{\mathsf T}X$ can be written by hand.
 
 | Notebook | Title |
 |---|---|
@@ -298,14 +266,9 @@ When a loss is differentiated, the derivative is written out, and SymPy confirms
 
 ## 08. Polynomial Regression
 
-Sixteen lessons, from the meaning of a polynomial coefficient through interpolation, conditioning, lack of fit, and a complete study. The method matches the linear-regression path.
+Sixteen lessons on the degree. A polynomial is linear in its coefficients, so the normal equations are the ones proved in path `07`. The new question is which powers belong in $X$.
 
-1. State the definition and derive the result.
-2. Work the numbers by hand, line by line.
-3. Recheck with Python. The hand answer and the computed answer are printed, and they must match.
-4. Close with one pitfall and a short summary.
-
-A polynomial regression is linear in its coefficients, so the normal equations are the same ones as in path `07`. The new material is the choice of degree, the shape of the basis, and what a perfect fit does and does not mean.
+On $x = -2,-1,0,1,2$ the values $10, 0, 1, 8, 16$ are exactly $1 + 2x + 3x^2$, with residual sum of squares 10 and $R^2 = 83/88$. The lessons then separate that identity from a higher power's extra sum of squares, a cubic hiding in the residuals, a shift of origin, orthogonal columns, and a ridge penalty. Interpolation can hit every node and still be a bad curve between them. The monomial basis becomes ill-conditioned as the degree grows. Lack of fit is split from pure error. A perfect fit is a statement about the nodes that were used.
 
 | Notebook | Title |
 |---|---|
@@ -328,14 +291,9 @@ A polynomial regression is linear in its coefficients, so the normal equations a
 
 ## 09. Support Vector Machines
 
-Sixteen lessons, from a signed score to kernels and a single training step. The prose stays close to the arithmetic. Each example is proved before it is coded.
+Sixteen lessons on the widest empty street between two labels, computed with the standard library and no solver. A multiplier is kept only after it rebuilds $\mathbf{w}$ and meets complementary slackness.
 
-1. State the rule or the optimization problem in display mathematics.
-2. Solve a small numerical case by hand, including the constraints.
-3. Recheck with Python. The hand answer and the computed answer must match.
-4. Close with one pitfall and the sentence worth keeping.
-
-The hard-margin street, the hinge, and the kernels are calculated directly. No solver library is required. A multiplier is trusted only after it rebuilds $\mathbf{w}$ and satisfies complementary slackness.
+Three points settle the hard-margin case. $P=(2,0)$ labeled $+1$ and $N_1=(0,1)$, $N_2=(0,-1)$ labeled $-1$ give $\mathbf{w}=(1,0)$, $b=-1$, and multipliers $1/2$, $1/4$, $1/4$. On a line, soft-margin $C=1$ gives $w=1$, $b=-3/2$, and cost $3/2$; $C \ge 2$ recovers the hard margin. The hard-margin objective and the soft-margin bill are different numbers. XOR separates under a product feature map, which is a different kernel from $(\mathbf{x}\cdot\mathbf{z})^2$. One Pegasos step is written out, and that single step does not land on the batch solution.
 
 | Notebook | Title |
 |---|---|
@@ -358,14 +316,9 @@ The hard-margin street, the hinge, and the kernels are calculated directly. No s
 
 ## 10. Decision Trees
 
-Sixteen lessons, from walking a finished tree through Gini, entropy, regression leaves, pruning, and rectangles. Every split is calculated by hand before Python repeats it. Matplotlib draws the regions; no tree library is required.
+Sixteen lessons on growing a tree from impurity. Every split is a fraction, calculated before Python repeats it. Matplotlib draws the leaves as rectangles in the data plane. No tree library is used.
 
-1. State the definition and prove the small result.
-2. Work one table by hand, including the fractions.
-3. Recheck with Python. The hand answer and the computed answer must match.
-4. Close with one pitfall and the sentence worth keeping.
-
-The running table is eight inspected parts. A part passes only when its length is at most $7/2$ and its weight is at most $3$. Ties in gain are broken in writing, because a silent tie can swap the feature ranking.
+The table is eight parts. A part passes only when its length is at most $7/2$ and its weight is at most $3$. The parent Gini is $1/2$. The best gain is $1/6$, tied between those two cuts; the written tie-break takes the earlier feature and then the smaller threshold, so the root is the length cut. Three passes and one fail have Gini $3/8$. That cut can show zero error-rate gain while the Gini gain is $1/8$. A regression leaf predicts the mean of its prices. Pruning charges $\alpha$ per extra leaf: $\alpha < 1/10$ keeps three leaves, and $\alpha > 1/5$ keeps one. A category is a question such as "Is steel?", not a name sorted as if it were a number.
 
 | Notebook | Title |
 |---|---|
@@ -388,14 +341,9 @@ The running table is eight inspected parts. A part passes only when its length i
 
 ## 11. k-Nearest Neighbors
 
-Sixteen lessons, from a stored table through distance, votes, weights, scaling, and leave-one-out. Every neighbor is ranked by hand before Python repeats the sort. Matplotlib draws the boundary; no neighbor library is required.
+Sixteen lessons on a prediction made from stored neighbors. Every neighbor is ranked by hand before Python sorts the same distances. Matplotlib draws the decision boundary. No neighbor library is used.
 
-1. State the rule and prove the small result.
-2. Work today's query on the same six mornings.
-3. Recheck with Python. The hand answer and the computed answer must match.
-4. Close with one pitfall and the sentence worth keeping.
-
-The memory is three busy mornings and three quiet ones, so a global majority cannot answer. Today is $(2, 2)$. One neighbor says busy, five unweighted neighbors say quiet, and the same five with weights $1/d$ say busy again.
+The memory is three busy mornings and three quiet ones, so a global majority cannot answer. The query is $(2,2)$. The nearest morning is busy. Three neighbors vote busy, 2 to 1. Five unweighted neighbors vote quiet, 3 to 2. The same five with weights $1/d$ vote busy again, $70/120$ against $59/120$. Scaling that includes the query ties two squared distances at exactly 6. Scaling fitted on the stored rows only does not. From the center of a cube every corner is tied. Shift the query by $1/2$ in one coordinate and the squared distances differ by 2; that gap is $8/(4d-3)$ of the nearer distance, so $8/5$ when $d = 2$ and $8/37$ when $d = 10$. A query that copies a stored row has distance 0 and a fake perfect score. Leave-one-out hides that row before $k$ is judged.
 
 | Notebook | Title |
 |---|---|
@@ -418,14 +366,9 @@ The memory is three busy mornings and three quiet ones, so a global majority can
 
 ## 12. Perceptron
 
-Sixteen lessons, from reading a score to the update rule, the convergence bound, and a pocket for a paper no line can fit. Every update is written by hand before Python repeats it. Matplotlib draws the lines; no perceptron library is required.
+Sixteen lessons on the perceptron update. Every step is written by hand before Python repeats it. Matplotlib draws the lines. No perceptron library is used.
 
-1. State the rule and prove the small result.
-2. Work the same points by hand, including the fractions.
-3. Recheck with Python. The hand answer and the computed answer must match.
-4. Close with one pitfall and the sentence worth keeping.
-
-Pass is $+1$ and fail is $-1$. A point is correct only when its margin is positive. On one measurement the walk uses $5$ updates and the bound promises at most $10$. In the plane, three papers reach $2x_1 + x_2 - 1$ in three updates, a second order reaches a different line, and neither line is the widest.
+Pass is $+1$ and fail is $-1$. A point counts as correct only when its margin is positive. On one measurement the walk uses 5 updates, and the convergence bound promises at most 10. In the plane, one order of three papers reaches $2x_1 + x_2 - 1$ in three updates. A second order reaches a different separating line. Neither line is the widest street from path 09. XOR has no separating line. When the loss is allowed to rise, the pocket keeps the best weights seen so far.
 
 | Notebook | Title |
 |---|---|
@@ -448,14 +391,9 @@ Pass is $+1$ and fail is $-1$. A point is correct only when its margin is positi
 
 ## 13. Multilayer Perceptron
 
-Sixteen lessons, from a layer of scores through a bend, XOR, the chain rule, and one gradient step. Every derivative is computed by hand before Python repeats it. Matplotlib draws the bend and the two step sizes; no network library is required.
+Sixteen lessons on one hidden layer. Every derivative is computed by hand before Python repeats it. Matplotlib draws the bend and the two step sizes. No network library is used.
 
-1. State the rule and prove the small result.
-2. Work the same gates by hand, including the fractions.
-3. Recheck with Python. The hand answer and the computed answer must match.
-4. Close with one pitfall and the sentence worth keeping.
-
-The four gates are XOR. Two straight layers still score gate 00 as $2$. One ReLU fold, $h_1 - 2h_2$, scores them $0, 1, 1, 0$. A step of size $1/8$ on a perturbed output moves the loss from $1/2$ to $23/128$. A step of size $1/4$ moves it to $23/32$.
+The four gates are XOR. Two layers with no bend still score gate 00 as 2, because a composition of linear maps is one linear map. The ReLU fold $h_1 - 2h_2$ scores the gates $0, 1, 1, 0$. One hidden unit cannot build that pattern. A dead ReLU blocks the input weights behind it, and two hidden units that start identical stay identical. A gradient step of size $1/8$ moves the squared loss from $1/2$ to $23/128$. A step of size $1/4$ moves it to $23/32$. The step size is part of the answer.
 
 | Notebook | Title |
 |---|---|
@@ -478,7 +416,9 @@ The four gates are XOR. Two straight layers still score gate 00 as $2$. One ReLU
 
 ## 14. Spaceship Titanic
 
-Sixteen lessons on one manifest. The question is which passengers were transported to another dimension. `data/train.csv` has 8693 known fates, 4378 of them transported. `data/test.csv` has 4277 passengers and no fate. CryoSleep alone is right on 6244 of 8693. The audited decision list is right on 6503 of 8693, and on 1331 of 1772 passengers whose whole group was held out. A groupmate's fate is a poor copy: 797 multi-person groups disagree. The test fates stay unknown, so this path does not claim a leaderboard score.
+Sixteen lessons on the Spaceship Titanic manifest. The question is which passengers were transported. `data/train.csv` has 8693 known fates: 4378 transported and 4315 stayed. The gap is 63, which is $63/17386$ above one half. `data/test.csv` has 4277 passengers and no fate. Train and test share no group id.
+
+CryoSleep alone is right on 6244 of 8693. The audited decision list is right on 6503 of 8693. Of that gain, the age $\le 12$ step contributes a net $291 - 138$ and the Europa deck B/C step a net $158 - 52$, together 259. Holding out whole groups with $\mathrm{md5}(\mathrm{group\_id}) \bmod 5 = 0$ leaves 1772 passengers; the list is right on 1331 of them. Of 1412 multi-person groups, 797 have mixed fates, so copying a groupmate is a weak rule. The test fates stay unknown. This path reports the holdout count, not a leaderboard score.
 
 | Notebook | Title |
 |---|---|
@@ -501,7 +441,9 @@ Sixteen lessons on one manifest. The question is which passengers were transport
 
 ## 15. House Prices
 
-Sixteen lessons on the Ames sale prices. The question is to predict `SalePrice`. `data/train.csv` has 1460 known prices, summing to 264144946, so the mean is $132072473/730$ and the median is 163000. `data/test.csv` has 1459 houses and no price. A grade-median table, fit without the houses it scores, has holdout root mean squared log error about 0.224. A log line on overall quality and living area, fit the same way, has holdout error about 0.183. The test prices stay unknown, so this path does not claim a leaderboard score.
+Sixteen lessons on the Ames sale prices. The question is `SalePrice`. `data/train.csv` has 1460 houses whose prices sum to 264144946, so the mean is $132072473/730$ and the median is 163000. `data/test.csv` has 1459 houses and no price. The token `NA` is the string `NA`: on PoolQC, Alley, and an absent basement it means none, and on LotFrontage it means unknown.
+
+The contest score is the root mean squared error of the natural logarithm of price. A grade-median table, fit on the houses whose `Id` is not divisible by 5, has holdout error about 0.224. A log line on overall quality and living area, fit the same way, has holdout error about 0.183. The dollar line in quality is negative at grade 1. Four houses have living area at least 4000, all of quality 10, and none of them fall in that holdout. The 1459 test prices stay unknown. A published public score near 0.12, from a boosted model under another split, is not this path's number.
 
 | Notebook | Title |
 |---|---|
@@ -524,7 +466,9 @@ Sixteen lessons on the Ames sale prices. The question is to predict `SalePrice`.
 
 ## 16. Movie Recommendation
 
-Sixteen lessons on MovieLens 100K. The question is to predict the star a person would give a movie. `data/` has 100000 ratings from 943 people on 1682 movies. The stars sum to 352986, so the mean is $176493/50000$. An empty cell is not a zero. The bias formula $\bar r_u + \bar r_i - \mu$, fit on `ua.base` and scored on `ua.test`, has root mean squared error about 0.992. Neighbor and factorization models are explained on a worked example; the audited number is that bias error. The tables are the GroupLens MovieLens 100K release; cite Harper and Konstan, ACM TiiS 2015, and read `data/README` for the use conditions.
+Sixteen lessons on collaborative filtering with MovieLens 100K: 100000 integer ratings, from 1 to 5, by 943 people on 1682 movies. The stars sum to 352986, so the mean is $176493/50000$. The tables are the GroupLens release. Cite Harper and Konstan, ACM TiiS 2015, and read `data/README` for the conditions. These lessons are not an endorsement by the University of Minnesota or by GroupLens.
+
+`u.item` is pipe-separated. An empty user-movie cell is an absent rating; zero is not on the scale. Means are fit on `ua.base` only and scored on `ua.test`, 9430 ratings, ten per user. The bias formula $\bar r_u + \bar r_i - \mu$ has root mean squared error about 0.992, ahead of the movie mean, the user mean, and the global mean. User 1 on *Angels and Insects* is predicted near 3.423; the held-out star is 4. On a toy pair, a neighbor formula predicts $14/3$ where the bias formula predicts 4. Fitting on all of `u.data` and then scoring `ua.test` would leak those labels. Neighbor models and factorizations are derived on that toy and are not the audited score.
 
 | Notebook | Title |
 |---|---|
@@ -547,7 +491,9 @@ Sixteen lessons on MovieLens 100K. The question is to predict the star a person 
 
 ## 17. Customer Churn
 
-Sixteen lessons on the IBM telco customer churn sample. The question is whether `Churn` is `Yes`. `data/Telco-Customer-Churn.csv` has 7043 customers, and 1869 leave, so the leave rate is $1869/7043$. Predicting stay scores $5174/7043$ and flags none of the leavers. The sentence chosen on the 5626 fit customers is month-to-month, and fiber optic or an electronic check. On the other 1417 customers its $F_1$ is $488/861$. That sentence's holdout accuracy is $1044/1417$, and predicting stay scores $1052/1417$ on the same people. The source note is `data/SOURCE.txt`, and the Apache License 2.0 text is `data/LICENSE`. These lessons are not an IBM product.
+Sixteen lessons on the IBM telco customer churn sample: 7043 customers, 21 columns, label `Churn`. Of them, 1869 leave, so the leave rate is $1869/7043$. Predicting stay scores $5174/7043$ and flags none of those leavers. The source note is `data/SOURCE.txt` and the Apache License 2.0 text is `data/LICENSE`. These lessons are not an IBM product.
+
+Eleven `TotalCharges` cells are a single space. Those eleven customers have tenure 0, and all eleven stayed. Month-to-month customers leave at $331/775$, still below one half, so a logistic cut at $1/2$ on contract alone flags nobody. The sentence chosen by $F_1$ on the 5626 fit rows, split by the MD5 of `customerID`, is month-to-month and (fiber optic or an electronic check). On the other 1417 customers its $F_1$ is $488/861$. Its holdout accuracy is $1044/1417$, eight customers below predicting stay ($1052/1417$). Female and male leave rates differ by less than $1/100$, and that gap stays out of the reported rule.
 
 | Notebook | Title |
 |---|---|
