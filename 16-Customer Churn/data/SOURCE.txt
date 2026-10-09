@@ -1,0 +1,12 @@
+Telco-Customer-Churn.csv
+
+This table is the IBM telco customer churn sample distributed in the
+repository IBM/telco-customer-churn-on-icp4d, at data/Telco-Customer-Churn.csv.
+That repository is under the Apache License 2.0. A copy of the license is
+data/LICENSE.
+
+The earlier Watson Analytics filename was WA_Fn-UseC_-Telco-Customer-Churn.csv.
+
+The file has 7043 customers and 21 columns. The label Churn is Yes or No.
+These lessons are a teaching path. They are not an IBM product, and they
+are not endorsed by IBM.

@@ -1,6 +1,6 @@
-# Fifteen paths
+# Sixteen paths
 
-The tutorial is fifteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is sixteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -18,11 +18,12 @@ The tutorial is fifteen numbered folders, taken in order. Each notebook already 
 13-Spaceship Titanic/             16 lessons, needs Matplotlib
 14-House Prices/                  16 lessons, needs Matplotlib
 15-Movie Recommendation/          16 lessons, needs Matplotlib
+16-Customer Churn/                16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, `13`, `14`, and `15` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, `13`, `14`, `15`, and `16` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -517,3 +518,26 @@ Sixteen lessons on MovieLens 100K. The question is to predict the star a person 
 | `15-Movie Recommendation/14-neighbors-and-factors.ipynb` | What a neighbor model adds, and what a factorization adds |
 | `15-Movie Recommendation/15-what-we-keep.ipynb` | What the counts refuse |
 | `15-Movie Recommendation/16-full-study.ipynb` | The rating, end to end |
+
+## 16. Customer Churn
+
+Sixteen lessons on the IBM telco customer churn sample. The question is whether `Churn` is `Yes`. `data/Telco-Customer-Churn.csv` has 7043 customers, and 1869 leave, so the leave rate is $1869/7043$. Predicting stay scores $5174/7043$ and flags none of the leavers. The sentence chosen on the 5626 fit customers is month-to-month, and fiber optic or an electronic check. On the other 1417 customers its $F_1$ is $488/861$. That sentence's holdout accuracy is $1044/1417$, and predicting stay scores $1052/1417$ on the same people. The source note is `data/SOURCE.txt`, and the Apache License 2.0 text is `data/LICENSE`. These lessons are not an IBM product.
+
+| Notebook | Title |
+|---|---|
+| `16-Customer Churn/01-the-question.ipynb` | Will this customer leave? |
+| `16-Customer Churn/02-the-file.ipynb` | Twenty-one columns, one label |
+| `16-Customer Churn/03-one-customer.ipynb` | Customer 7590-VHVEG |
+| `16-Customer Churn/04-who-leaves.ipynb` | 1869 leavers out of 7043 |
+| `16-Customer Churn/05-the-contract.ipynb` | Month-to-month carries most of the leavers |
+| `16-Customer Churn/06-tenure.ipynb` | Longer stays leave less often |
+| `16-Customer Churn/07-the-bill.ipynb` | A space in the total, and a bill that moved |
+| `16-Customer Churn/08-internet-and-the-check.ipynb` | Fiber optic and the electronic check |
+| `16-Customer Churn/09-a-rule-you-can-say.ipynb` | A rule you can say out loud |
+| `16-Customer Churn/10-precision-and-recall.ipynb` | Precision, recall, and a tie on accuracy |
+| `16-Customer Churn/11-the-holdout.ipynb` | Fit on 5626, score on 1417 |
+| `16-Customer Churn/12-log-odds.ipynb` | Log-odds, and a cut at one half |
+| `16-Customer Churn/13-four-customers.ipynb` | Four held-out customers |
+| `16-Customer Churn/14-what-the-counts-refuse.ipynb` | What the counts refuse |
+| `16-Customer Churn/15-after-the-rule.ipynb` | What a fitted model adds |
+| `16-Customer Churn/16-full-study.ipynb` | The customer, end to end |
