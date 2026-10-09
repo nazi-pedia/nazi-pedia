@@ -1,6 +1,6 @@
-# Thirteen paths
+# Fourteen paths
 
-The tutorial is thirteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is fourteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -16,11 +16,12 @@ The tutorial is thirteen numbered folders, taken in order. Each notebook already
 11-Perceptron/                     16 lessons, needs Matplotlib
 12-Multilayer Perceptron (MLP)/   16 lessons, needs Matplotlib
 13-Spaceship Titanic/             16 lessons, needs Matplotlib
+14-House Prices/                  16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, and `13` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, `13`, and `14` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -469,3 +470,26 @@ Sixteen lessons on one manifest. The question is which passengers were transport
 | `13-Spaceship Titanic/14-odds.ipynb` | One column is a majority vote |
 | `13-Spaceship Titanic/15-after-the-list.ipynb` | What the published solutions add |
 | `13-Spaceship Titanic/16-full-study.ipynb` | The manifest, end to end |
+
+## 14. House Prices
+
+Sixteen lessons on the Ames sale prices. The question is to predict `SalePrice`. `data/train.csv` has 1460 known prices, summing to 264144946, so the mean is $132072473/730$ and the median is 163000. `data/test.csv` has 1459 houses and no price. A grade-median table, fit without the houses it scores, has holdout root mean squared log error about 0.224. A log line on overall quality and living area, fit the same way, has holdout error about 0.183. The test prices stay unknown, so this path does not claim a leaderboard score.
+
+| Notebook | Title |
+|---|---|
+| `14-House Prices/01-the-question.ipynb` | The price, and the error that scores it |
+| `14-House Prices/02-the-columns.ipynb` | Eighty columns, one codebook |
+| `14-House Prices/03-one-house.ipynb` | House 1, before any average |
+| `14-House Prices/04-the-token-na.ipynb` | When `NA` means none, and when it means unknown |
+| `14-House Prices/05-the-price.ipynb` | The 1460 prices |
+| `14-House Prices/06-overall-quality.ipynb` | OverallQual, the grade from 1 to 10 |
+| `14-House Prices/07-living-area.ipynb` | A straight line through living area |
+| `14-House Prices/08-neighborhood.ipynb` | Twenty-five neighborhoods |
+| `14-House Prices/09-basement-and-garage.ipynb` | Basement, garage, and a code that only looks numeric |
+| `14-House Prices/10-quality-words.ipynb` | The words Excellent, Good, Typical, Fair, Poor |
+| `14-House Prices/11-year-and-sale.ipynb` | When it was built, and how it was sold |
+| `14-House Prices/12-four-large-houses.ipynb` | Four houses above 4000 square feet |
+| `14-House Prices/13-a-grade-table.ipynb` | A table you fit without the houses you score |
+| `14-House Prices/14-the-log-line.ipynb` | A line on the log price |
+| `14-House Prices/15-after-the-line.ipynb` | What the published solutions add |
+| `14-House Prices/16-full-study.ipynb` | The sale, end to end |
