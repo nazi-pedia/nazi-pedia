@@ -1,6 +1,6 @@
-# Eleven paths
+# Twelve paths
 
-The tutorial is eleven numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is twelve numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -14,11 +14,12 @@ The tutorial is eleven numbered folders, taken in order. Each notebook already s
 09-Decision Trees/                16 lessons, needs Matplotlib
 10-k-Nearest Neighbors (k-NN)/    16 lessons, needs Matplotlib
 11-Perceptron/                     16 lessons, needs Matplotlib
+12-Multilayer Perceptron (MLP)/   16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, and `11` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, and `12` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -414,3 +415,33 @@ Pass is $+1$ and fail is $-1$. A point is correct only when its margin is positi
 | `11-Perceptron/14-the-loss.ipynb` | The loss can rise |
 | `11-Perceptron/15-the-pocket.ipynb` | Keep the best weights seen |
 | `11-Perceptron/16-full-study.ipynb` | One line, from zero |
+
+## 12. Multilayer Perceptron
+
+Sixteen lessons, from a layer of scores through a bend, XOR, the chain rule, and one gradient step. Every derivative is computed by hand before Python repeats it. Matplotlib draws the bend and the two step sizes; no network library is required.
+
+1. State the rule and prove the small result.
+2. Work the same gates by hand, including the fractions.
+3. Recheck with Python. The hand answer and the computed answer must match.
+4. Close with one pitfall and the sentence worth keeping.
+
+The four gates are XOR. Two straight layers still score gate 00 as $2$. One ReLU fold, $h_1 - 2h_2$, scores them $0, 1, 1, 0$. A step of size $1/8$ on a perturbed output moves the loss from $1/2$ to $23/128$. A step of size $1/4$ moves it to $23/32$.
+
+| Notebook | Title |
+|---|---|
+| `12-Multilayer Perceptron (MLP)/01-a-layer.ipynb` | A layer is several scores |
+| `12-Multilayer Perceptron (MLP)/02-two-layers-one-line.ipynb` | Two straight layers are still one line |
+| `12-Multilayer Perceptron (MLP)/03-relu.ipynb` | ReLU bends one coordinate |
+| `12-Multilayer Perceptron (MLP)/04-xor-forward.ipynb` | The hidden pair is the whole table |
+| `12-Multilayer Perceptron (MLP)/05-the-bend.ipynb` | Where the bend sits |
+| `12-Multilayer Perceptron (MLP)/06-one-hidden-unit.ipynb` | One hidden unit cannot build XOR |
+| `12-Multilayer Perceptron (MLP)/07-sigmoid.ipynb` | A smooth bend |
+| `12-Multilayer Perceptron (MLP)/08-squared-loss.ipynb` | The squared loss |
+| `12-Multilayer Perceptron (MLP)/09-the-chain-rule.ipynb` | The chain rule, one unit deep |
+| `12-Multilayer Perceptron (MLP)/10-a-dead-unit.ipynb` | A dead unit blocks the input weights |
+| `12-Multilayer Perceptron (MLP)/11-two-hidden-units.ipynb` | Back through two hidden units |
+| `12-Multilayer Perceptron (MLP)/12-the-step-size.ipynb` | The step size decides the total |
+| `12-Multilayer Perceptron (MLP)/13-the-bias-gradient.ipynb` | The bias is a weight on the constant 1 |
+| `12-Multilayer Perceptron (MLP)/14-identical-units.ipynb` | Identical units stay identical |
+| `12-Multilayer Perceptron (MLP)/15-a-probability.ipynb` | A score can be read as a probability |
+| `12-Multilayer Perceptron (MLP)/16-full-study.ipynb` | The four gates, forward and one step |
