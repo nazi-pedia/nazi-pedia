@@ -1,6 +1,6 @@
-# Eight paths
+# Nine paths
 
-The tutorial is eight numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is nine numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Python Fundamentals/           20 lessons, standard library only
@@ -11,11 +11,12 @@ The tutorial is eight numbered folders, taken in order. Each notebook already st
 06-Polynomial Regression/         16 lessons, needs NumPy, SymPy, and SciPy
 07-Support Vector Machines (SVM)/ 16 lessons, standard library only
 08-Decision Trees/                16 lessons, needs Matplotlib
+09-k-Nearest Neighbors (k-NN)/    16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01` and `07` use only the Python standard library. `02`, `03`, `04`, `05`, `06`, and `08` need the packages in `requirements.txt`:
+`01` and `07` use only the Python standard library. `02`, `03`, `04`, `05`, `06`, `08`, and `09` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -320,3 +321,33 @@ The running table is eight inspected parts. A part passes only when its length i
 | `08-Decision Trees/14-named-features.ipynb` | A question with names, not numbers |
 | `08-Decision Trees/15-grow-and-predict.ipynb` | The same rules, written as functions |
 | `08-Decision Trees/16-full-study.ipynb` | Full study: eight parts, one odd point, one price |
+
+## 09. k-Nearest Neighbors
+
+Sixteen lessons, from a stored table through distance, votes, weights, scaling, and leave-one-out. Every neighbor is ranked by hand before Python repeats the sort. Matplotlib draws the boundary; no neighbor library is required.
+
+1. State the rule and prove the small result.
+2. Work today's query on the same six mornings.
+3. Recheck with Python. The hand answer and the computed answer must match.
+4. Close with one pitfall and the sentence worth keeping.
+
+The memory is three busy mornings and three quiet ones, so a global majority cannot answer. Today is $(2, 2)$. One neighbor says busy, five unweighted neighbors say quiet, and the same five with weights $1/d$ say busy again.
+
+| Notebook | Title |
+|---|---|
+| `09-k-Nearest Neighbors (k-NN)/01-stored-cases.ipynb` | Look at the stored mornings |
+| `09-k-Nearest Neighbors (k-NN)/02-euclidean-distance.ipynb` | Straight-line distance |
+| `09-k-Nearest Neighbors (k-NN)/03-one-neighbor.ipynb` | One neighbor |
+| `09-k-Nearest Neighbors (k-NN)/04-the-vote.ipynb` | Let several neighbors vote |
+| `09-k-Nearest Neighbors (k-NN)/05-weighted-votes.ipynb` | A nearer morning gets a heavier vote |
+| `09-k-Nearest Neighbors (k-NN)/06-scaling.ipynb` | A large unit can hide the neighbor |
+| `09-k-Nearest Neighbors (k-NN)/07-scale-from-training.ipynb` | The query does not help compute the scale |
+| `09-k-Nearest Neighbors (k-NN)/08-manhattan.ipynb` | Another way to add the gaps |
+| `09-k-Nearest Neighbors (k-NN)/09-regression.ipynb` | Neighbors can average a number |
+| `09-k-Nearest Neighbors (k-NN)/10-distance-ties.ipynb` | Two mornings at the same distance |
+| `09-k-Nearest Neighbors (k-NN)/11-the-boundary.ipynb` | The boundary is the set of ties |
+| `09-k-Nearest Neighbors (k-NN)/12-many-dimensions.ipynb` | In many dimensions the gap shrinks |
+| `09-k-Nearest Neighbors (k-NN)/13-leave-one-out.ipynb` | Score $k$ by hiding one stored row |
+| `09-k-Nearest Neighbors (k-NN)/14-the-procedure.ipynb` | One procedure, every answer we already know |
+| `09-k-Nearest Neighbors (k-NN)/15-zero-distance.ipynb` | Distance zero is a stored copy |
+| `09-k-Nearest Neighbors (k-NN)/16-full-study.ipynb` | Today, worked from the table |
