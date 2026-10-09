@@ -1,19 +1,20 @@
-# Six paths
+# Seven paths
 
-The tutorial is six numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is seven numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
-01-Python Fundamentals/          20 lessons, standard library only
-02-Numpy Fundamentals/           16 lessons, needs NumPy
-03-Calculus with Python/         43 lessons, needs SymPy
-04-Linear Regression/            25 lessons, needs NumPy, SymPy, and SciPy
-05-Polynomial Regression/        16 lessons, needs NumPy, SymPy, and SciPy
-06-Support Vector Machines (SVM)/ 16 lessons, standard library only
+01-Python Fundamentals/           20 lessons, standard library only
+02-Numpy Fundamentals/            16 lessons, needs NumPy
+03-Calculus with Python/          43 lessons, needs SymPy
+04-Data Visualization/            16 lessons, needs Matplotlib
+05-Linear Regression/             25 lessons, needs NumPy, SymPy, and SciPy
+06-Polynomial Regression/         16 lessons, needs NumPy, SymPy, and SciPy
+07-Support Vector Machines (SVM)/ 16 lessons, standard library only
 README.md
 requirements.txt
 ```
 
-`01` and `06` use only the Python standard library. `02`, `03`, `04`, and `05` need the packages in `requirements.txt`:
+`01` and `07` use only the Python standard library. `02`, `03`, `04`, `05`, and `06` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -159,7 +160,38 @@ An indefinite integral is rechecked by differentiation, because SymPy omits the 
 | `03-Calculus with Python/42-heaviside-dirac-convolution.ipynb` | The Heaviside function, the Dirac delta, and convolution |
 | `03-Calculus with Python/43-series-solutions-systems.ipynb` | Series solutions and linear systems |
 
-## 04. Linear Regression
+## 04. Data Visualization
+
+Sixteen lessons, from one question through lines, bars, distributions, heatmaps, and a one-week report. Every chart is drawn with Matplotlib, and the picture is stored in the notebook.
+
+1. Ask one question.
+2. Compute the number that answers it.
+3. Encode that number as length, position, or color.
+4. Title the finding and label the units.
+5. Read the sentence back from the picture, and name one way it could be misread.
+
+The running example is one week at North Lab. The same table becomes a ranking, a time line, and a heatmap. Each picture is allowed to answer only the question it was built for.
+
+| Notebook | Title |
+|---|---|
+| `04-Data Visualization/01-one-question.ipynb` | One question, one chart |
+| `04-Data Visualization/02-figure-and-axes.ipynb` | The page and the panel |
+| `04-Data Visualization/03-lines.ipynb` | Change over time |
+| `04-Data Visualization/04-scatter.ipynb` | Two measurements on one person |
+| `04-Data Visualization/05-bars.ipynb` | Length means amount |
+| `04-Data Visualization/06-histograms.ipynb` | How a pile of numbers spreads |
+| `04-Data Visualization/07-boxplots.ipynb` | Five numbers, and the point that sits alone |
+| `04-Data Visualization/08-small-multiples.ipynb` | Several panels, one question each |
+| `04-Data Visualization/09-labels-and-color.ipynb` | Say what the marks mean |
+| `04-Data Visualization/10-annotations.ipynb` | Mark the point that matters |
+| `04-Data Visualization/11-heatmaps.ipynb` | A table you can see |
+| `04-Data Visualization/12-cumulative-share.ipynb` | The running share |
+| `04-Data Visualization/13-which-chart.ipynb` | Pick the chart from the question |
+| `04-Data Visualization/14-scales.ipynb` | Scales that change the story |
+| `04-Data Visualization/15-save-and-reuse.ipynb` | A function, then a file |
+| `04-Data Visualization/16-full-study.ipynb` | North Lab, one week |
+
+## 05. Linear Regression
 
 Twenty-five lessons, from the prediction line through a complete numerical study. Every example is solved by hand in display mathematics. Python then repeats the arithmetic, and the two answers are required to agree.
 
@@ -172,33 +204,33 @@ When a loss is differentiated, the derivative is written out, and SymPy confirms
 
 | Notebook | Title |
 |---|---|
-| `04-Linear Regression/01-prediction-line.ipynb` | The prediction line |
-| `04-Linear Regression/02-residuals.ipynb` | Residuals and the sum of squares |
-| `04-Linear Regression/03-least-squares-formulas.ipynb` | Deriving the slope and the intercept |
-| `04-Linear Regression/04-complete-fit.ipynb` | A complete fit, with every sum written out |
-| `04-Linear Regression/05-r-squared.ipynb` | The decomposition and $R^2$ |
-| `04-Linear Regression/06-correlation.ipynb` | Correlation and the slope |
-| `04-Linear Regression/07-through-the-origin.ipynb` | Regression through the origin |
-| `04-Linear Regression/08-design-matrix.ipynb` | The design matrix |
-| `04-Linear Regression/09-multiple-regression.ipynb` | Multiple regression |
-| `04-Linear Regression/10-projection.ipynb` | Projection and the hat matrix |
-| `04-Linear Regression/11-gauss-markov.ipynb` | The Gauss–Markov model |
-| `04-Linear Regression/12-standard-errors.ipynb` | Estimating the error variance |
-| `04-Linear Regression/13-inference.ipynb` | Tests and confidence intervals |
-| `04-Linear Regression/14-prediction-intervals.ipynb` | Intervals for a mean response and for a new observation |
-| `04-Linear Regression/15-indicator-variables.ipynb` | Indicator variables |
-| `04-Linear Regression/16-polynomials.ipynb` | Polynomial regression |
-| `04-Linear Regression/17-interactions.ipynb` | Interactions |
-| `04-Linear Regression/18-centering.ipynb` | Centering |
-| `04-Linear Regression/19-collinearity.ipynb` | Collinearity |
-| `04-Linear Regression/20-influence.ipynb` | Leverage and Cook's distance |
-| `04-Linear Regression/21-diagnostics.ipynb` | Residual patterns |
-| `04-Linear Regression/22-gradient-descent.ipynb` | Gradient descent |
-| `04-Linear Regression/23-ridge.ipynb` | Ridge regression |
-| `04-Linear Regression/24-weighted-least-squares.ipynb` | Weighted least squares |
-| `04-Linear Regression/25-full-study.ipynb` | A complete study |
+| `05-Linear Regression/01-prediction-line.ipynb` | The prediction line |
+| `05-Linear Regression/02-residuals.ipynb` | Residuals and the sum of squares |
+| `05-Linear Regression/03-least-squares-formulas.ipynb` | Deriving the slope and the intercept |
+| `05-Linear Regression/04-complete-fit.ipynb` | A complete fit, with every sum written out |
+| `05-Linear Regression/05-r-squared.ipynb` | The decomposition and $R^2$ |
+| `05-Linear Regression/06-correlation.ipynb` | Correlation and the slope |
+| `05-Linear Regression/07-through-the-origin.ipynb` | Regression through the origin |
+| `05-Linear Regression/08-design-matrix.ipynb` | The design matrix |
+| `05-Linear Regression/09-multiple-regression.ipynb` | Multiple regression |
+| `05-Linear Regression/10-projection.ipynb` | Projection and the hat matrix |
+| `05-Linear Regression/11-gauss-markov.ipynb` | The Gauss–Markov model |
+| `05-Linear Regression/12-standard-errors.ipynb` | Estimating the error variance |
+| `05-Linear Regression/13-inference.ipynb` | Tests and confidence intervals |
+| `05-Linear Regression/14-prediction-intervals.ipynb` | Intervals for a mean response and for a new observation |
+| `05-Linear Regression/15-indicator-variables.ipynb` | Indicator variables |
+| `05-Linear Regression/16-polynomials.ipynb` | Polynomial regression |
+| `05-Linear Regression/17-interactions.ipynb` | Interactions |
+| `05-Linear Regression/18-centering.ipynb` | Centering |
+| `05-Linear Regression/19-collinearity.ipynb` | Collinearity |
+| `05-Linear Regression/20-influence.ipynb` | Leverage and Cook's distance |
+| `05-Linear Regression/21-diagnostics.ipynb` | Residual patterns |
+| `05-Linear Regression/22-gradient-descent.ipynb` | Gradient descent |
+| `05-Linear Regression/23-ridge.ipynb` | Ridge regression |
+| `05-Linear Regression/24-weighted-least-squares.ipynb` | Weighted least squares |
+| `05-Linear Regression/25-full-study.ipynb` | A complete study |
 
-## 05. Polynomial Regression
+## 06. Polynomial Regression
 
 Sixteen lessons, from the meaning of a polynomial coefficient through interpolation, conditioning, lack of fit, and a complete study. The method matches the linear-regression path.
 
@@ -207,28 +239,28 @@ Sixteen lessons, from the meaning of a polynomial coefficient through interpolat
 3. Recheck with Python. The hand answer and the computed answer are printed, and they must match.
 4. Close with one pitfall and a short summary.
 
-A polynomial regression is linear in its coefficients, so the normal equations are the same ones as in path `04`. The new material is the choice of degree, the shape of the basis, and what a perfect fit does and does not mean.
+A polynomial regression is linear in its coefficients, so the normal equations are the same ones as in path `05`. The new material is the choice of degree, the shape of the basis, and what a perfect fit does and does not mean.
 
 | Notebook | Title |
 |---|---|
-| `05-Polynomial Regression/01-polynomial-model.ipynb` | A polynomial is linear in its coefficients |
-| `05-Polynomial Regression/02-vandermonde.ipynb` | The Vandermonde matrix |
-| `05-Polynomial Regression/03-quadratic-fit.ipynb` | Fitting a quadratic by hand |
-| `05-Polynomial Regression/04-the-line.ipynb` | The straight line on the same curve |
-| `05-Polynomial Regression/05-r-squared.ipynb` | $R^2$ for a polynomial |
-| `05-Polynomial Regression/06-extra-sum-of-squares.ipynb` | The extra sum of squares |
-| `05-Polynomial Regression/07-cubic.ipynb` | The cubic hidden in the residuals |
-| `05-Polynomial Regression/08-shifting-origin.ipynb` | Shifting the origin |
-| `05-Polynomial Regression/09-orthogonal-ridge.ipynb` | Orthogonal polynomials, then ridge |
-| `05-Polynomial Regression/10-inference.ipynb` | Standard errors and tests |
-| `05-Polynomial Regression/11-prediction.ipynb` | Prediction from a polynomial |
-| `05-Polynomial Regression/12-interpolation.ipynb` | Interpolation and the Runge warning |
-| `05-Polynomial Regression/13-conditioning.ipynb` | The condition of the monomial basis |
-| `05-Polynomial Regression/14-lack-of-fit.ipynb` | Lack of fit and pure error |
-| `05-Polynomial Regression/15-two-variables.ipynb` | A polynomial in two inputs |
-| `05-Polynomial Regression/16-full-study.ipynb` | A complete study |
+| `06-Polynomial Regression/01-polynomial-model.ipynb` | A polynomial is linear in its coefficients |
+| `06-Polynomial Regression/02-vandermonde.ipynb` | The Vandermonde matrix |
+| `06-Polynomial Regression/03-quadratic-fit.ipynb` | Fitting a quadratic by hand |
+| `06-Polynomial Regression/04-the-line.ipynb` | The straight line on the same curve |
+| `06-Polynomial Regression/05-r-squared.ipynb` | $R^2$ for a polynomial |
+| `06-Polynomial Regression/06-extra-sum-of-squares.ipynb` | The extra sum of squares |
+| `06-Polynomial Regression/07-cubic.ipynb` | The cubic hidden in the residuals |
+| `06-Polynomial Regression/08-shifting-origin.ipynb` | Shifting the origin |
+| `06-Polynomial Regression/09-orthogonal-ridge.ipynb` | Orthogonal polynomials, then ridge |
+| `06-Polynomial Regression/10-inference.ipynb` | Standard errors and tests |
+| `06-Polynomial Regression/11-prediction.ipynb` | Prediction from a polynomial |
+| `06-Polynomial Regression/12-interpolation.ipynb` | Interpolation and the Runge warning |
+| `06-Polynomial Regression/13-conditioning.ipynb` | The condition of the monomial basis |
+| `06-Polynomial Regression/14-lack-of-fit.ipynb` | Lack of fit and pure error |
+| `06-Polynomial Regression/15-two-variables.ipynb` | A polynomial in two inputs |
+| `06-Polynomial Regression/16-full-study.ipynb` | A complete study |
 
-## 06. Support Vector Machines
+## 07. Support Vector Machines
 
 Sixteen lessons, from a signed score to kernels and a single training step. The prose stays close to the arithmetic. Each example is proved before it is coded.
 
@@ -241,19 +273,19 @@ The hard-margin street, the hinge, and the kernels are calculated directly. No s
 
 | Notebook | Title |
 |---|---|
-| `06-Support Vector Machines (SVM)/01-signed-scores.ipynb` | A score, then a sign |
-| `06-Support Vector Machines (SVM)/02-distance-and-margin.ipynb` | How far is a point from the line? |
-| `06-Support Vector Machines (SVM)/03-widest-street.ipynb` | The widest empty street |
-| `06-Support Vector Machines (SVM)/04-three-point-fit.ipynb` | Three points, solved by hand |
-| `06-Support Vector Machines (SVM)/05-support-vectors.ipynb` | Support vectors are the points that hold the street |
-| `06-Support Vector Machines (SVM)/06-lagrange-kkt.ipynb` | Lagrange multipliers and the KKT conditions |
-| `06-Support Vector Machines (SVM)/07-the-dual.ipynb` | The dual problem |
-| `06-Support Vector Machines (SVM)/08-recover-weights.ipynb` | From multipliers back to a prediction |
-| `06-Support Vector Machines (SVM)/09-hinge-and-slack.ipynb` | Pay for a point inside the street |
-| `06-Support Vector Machines (SVM)/10-soft-margin-line.ipynb` | Four points on a line |
-| `06-Support Vector Machines (SVM)/11-feature-maps.ipynb` | A line in a bigger space |
-| `06-Support Vector Machines (SVM)/12-xor-and-kernels.ipynb` | XOR, separated by a product |
-| `06-Support Vector Machines (SVM)/13-rbf-kernel.ipynb` | A kernel from distance |
-| `06-Support Vector Machines (SVM)/14-one-versus-rest.ipynb` | More than two labels |
-| `06-Support Vector Machines (SVM)/15-pegasos-step.ipynb` | One training step |
-| `06-Support Vector Machines (SVM)/16-full-study.ipynb` | Full study: from a score to a kernel |
+| `07-Support Vector Machines (SVM)/01-signed-scores.ipynb` | A score, then a sign |
+| `07-Support Vector Machines (SVM)/02-distance-and-margin.ipynb` | How far is a point from the line? |
+| `07-Support Vector Machines (SVM)/03-widest-street.ipynb` | The widest empty street |
+| `07-Support Vector Machines (SVM)/04-three-point-fit.ipynb` | Three points, solved by hand |
+| `07-Support Vector Machines (SVM)/05-support-vectors.ipynb` | Support vectors are the points that hold the street |
+| `07-Support Vector Machines (SVM)/06-lagrange-kkt.ipynb` | Lagrange multipliers and the KKT conditions |
+| `07-Support Vector Machines (SVM)/07-the-dual.ipynb` | The dual problem |
+| `07-Support Vector Machines (SVM)/08-recover-weights.ipynb` | From multipliers back to a prediction |
+| `07-Support Vector Machines (SVM)/09-hinge-and-slack.ipynb` | Pay for a point inside the street |
+| `07-Support Vector Machines (SVM)/10-soft-margin-line.ipynb` | Four points on a line |
+| `07-Support Vector Machines (SVM)/11-feature-maps.ipynb` | A line in a bigger space |
+| `07-Support Vector Machines (SVM)/12-xor-and-kernels.ipynb` | XOR, separated by a product |
+| `07-Support Vector Machines (SVM)/13-rbf-kernel.ipynb` | A kernel from distance |
+| `07-Support Vector Machines (SVM)/14-one-versus-rest.ipynb` | More than two labels |
+| `07-Support Vector Machines (SVM)/15-pegasos-step.ipynb` | One training step |
+| `07-Support Vector Machines (SVM)/16-full-study.ipynb` | Full study: from a score to a kernel |
