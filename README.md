@@ -1,6 +1,6 @@
-# Seven paths
+# Eight paths
 
-The tutorial is seven numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is eight numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Python Fundamentals/           20 lessons, standard library only
@@ -10,11 +10,12 @@ The tutorial is seven numbered folders, taken in order. Each notebook already st
 05-Linear Regression/             25 lessons, needs NumPy, SymPy, and SciPy
 06-Polynomial Regression/         16 lessons, needs NumPy, SymPy, and SciPy
 07-Support Vector Machines (SVM)/ 16 lessons, standard library only
+08-Decision Trees/                16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01` and `07` use only the Python standard library. `02`, `03`, `04`, `05`, and `06` need the packages in `requirements.txt`:
+`01` and `07` use only the Python standard library. `02`, `03`, `04`, `05`, `06`, and `08` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -289,3 +290,33 @@ The hard-margin street, the hinge, and the kernels are calculated directly. No s
 | `07-Support Vector Machines (SVM)/14-one-versus-rest.ipynb` | More than two labels |
 | `07-Support Vector Machines (SVM)/15-pegasos-step.ipynb` | One training step |
 | `07-Support Vector Machines (SVM)/16-full-study.ipynb` | Full study: from a score to a kernel |
+
+## 08. Decision Trees
+
+Sixteen lessons, from walking a finished tree through Gini, entropy, regression leaves, pruning, and rectangles. Every split is calculated by hand before Python repeats it. Matplotlib draws the regions; no tree library is required.
+
+1. State the definition and prove the small result.
+2. Work one table by hand, including the fractions.
+3. Recheck with Python. The hand answer and the computed answer must match.
+4. Close with one pitfall and the sentence worth keeping.
+
+The running table is eight inspected parts. A part passes only when its length is at most $7/2$ and its weight is at most $3$. Ties in gain are broken in writing, because a silent tie can swap the feature ranking.
+
+| Notebook | Title |
+|---|---|
+| `08-Decision Trees/01-walk-a-tree.ipynb` | A tree is a list of questions |
+| `08-Decision Trees/02-majority-leaf.ipynb` | The leaf should name the majority |
+| `08-Decision Trees/03-gini.ipynb` | Gini impurity |
+| `08-Decision Trees/04-entropy.ipynb` | Entropy |
+| `08-Decision Trees/05-information-gain.ipynb` | The gain of a question |
+| `08-Decision Trees/06-thresholds.ipynb` | Why the midpoint is enough |
+| `08-Decision Trees/07-grow-the-tree.ipynb` | Grow until the leaves are pure |
+| `08-Decision Trees/08-regression-mean.ipynb` | A leaf that predicts a number |
+| `08-Decision Trees/09-regression-split.ipynb` | Where to cut a regression leaf |
+| `08-Decision Trees/10-depth.ipynb` | A deep tree can memorize one point |
+| `08-Decision Trees/11-pruning.ipynb` | Pay for every extra leaf |
+| `08-Decision Trees/12-feature-credit.ipynb` | How much impurity a feature removed |
+| `08-Decision Trees/13-rectangles.ipynb` | The cuts are rectangles |
+| `08-Decision Trees/14-named-features.ipynb` | A question with names, not numbers |
+| `08-Decision Trees/15-grow-and-predict.ipynb` | The same rules, written as functions |
+| `08-Decision Trees/16-full-study.ipynb` | Full study: eight parts, one odd point, one price |
