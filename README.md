@@ -1,6 +1,6 @@
-# Twelve paths
+# Thirteen paths
 
-The tutorial is twelve numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is thirteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -15,11 +15,12 @@ The tutorial is twelve numbered folders, taken in order. Each notebook already s
 10-k-Nearest Neighbors (k-NN)/    16 lessons, needs Matplotlib
 11-Perceptron/                     16 lessons, needs Matplotlib
 12-Multilayer Perceptron (MLP)/   16 lessons, needs Matplotlib
+13-Spaceship Titanic/             16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, and `12` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, and `13` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -445,3 +446,26 @@ The four gates are XOR. Two straight layers still score gate 00 as $2$. One ReLU
 | `12-Multilayer Perceptron (MLP)/14-identical-units.ipynb` | Identical units stay identical |
 | `12-Multilayer Perceptron (MLP)/15-a-probability.ipynb` | A score can be read as a probability |
 | `12-Multilayer Perceptron (MLP)/16-full-study.ipynb` | The four gates, forward and one step |
+
+## 13. Spaceship Titanic
+
+Sixteen lessons on one manifest. The question is which passengers were transported to another dimension. `data/train.csv` has 8693 known fates, 4378 of them transported. `data/test.csv` has 4277 passengers and no fate. CryoSleep alone is right on 6244 of 8693. The audited decision list is right on 6503 of 8693, and on 1331 of 1772 passengers whose whole group was held out. A groupmate's fate is a poor copy: 797 multi-person groups disagree. The test fates stay unknown, so this path does not claim a leaderboard score.
+
+| Notebook | Title |
+|---|---|
+| `13-Spaceship Titanic/01-the-question.ipynb` | The question on the manifest |
+| `13-Spaceship Titanic/02-the-columns.ipynb` | What each column records |
+| `13-Spaceship Titanic/03-six-passengers.ipynb` | Six passengers, before any rate |
+| `13-Spaceship Titanic/04-the-base-rate.ipynb` | The fate is almost a coin toss |
+| `13-Spaceship Titanic/05-blank-cells.ipynb` | Where the manifest is blank |
+| `13-Spaceship Titanic/06-cryosleep.ipynb` | CryoSleep is the strongest single column |
+| `13-Spaceship Titanic/07-deck-and-planet.ipynb` | Deck, side, and home planet |
+| `13-Spaceship Titanic/08-the-five-bills.ipynb` | The five bills point in two directions |
+| `13-Spaceship Titanic/09-age-vip-destination.ipynb` | Age, VIP, and destination |
+| `13-Spaceship Titanic/10-groups-and-names.ipynb` | Groups and surnames |
+| `13-Spaceship Titanic/11-the-decision-list.ipynb` | A decision list you can walk by hand |
+| `13-Spaceship Titanic/12-the-ledger.ipynb` | Where the 259 come from |
+| `13-Spaceship Titanic/13-held-out-groups.ipynb` | Score whole groups |
+| `13-Spaceship Titanic/14-odds.ipynb` | One column is a majority vote |
+| `13-Spaceship Titanic/15-after-the-list.ipynb` | What the published solutions add |
+| `13-Spaceship Titanic/16-full-study.ipynb` | The manifest, end to end |
