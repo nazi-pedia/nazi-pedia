@@ -1,6 +1,6 @@
-# Fourteen paths
+# Fifteen paths
 
-The tutorial is fourteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
+The tutorial is fifteen numbered folders, taken in order. Each notebook already stores the output of its code cells. Open a notebook in Jupyter and use Restart and Run All to recompute it.
 
 ```text
 01-Jupyter Notebook/              16 lessons, standard library only
@@ -17,11 +17,12 @@ The tutorial is fourteen numbered folders, taken in order. Each notebook already
 12-Multilayer Perceptron (MLP)/   16 lessons, needs Matplotlib
 13-Spaceship Titanic/             16 lessons, needs Matplotlib
 14-House Prices/                  16 lessons, needs Matplotlib
+15-Movie Recommendation/          16 lessons, needs Matplotlib
 README.md
 requirements.txt
 ```
 
-`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, `13`, and `14` need the packages in `requirements.txt`:
+`01`, `02`, and `08` use only the Python standard library. `03`, `04`, `05`, `06`, `07`, `09`, `10`, `11`, `12`, `13`, `14`, and `15` need the packages in `requirements.txt`:
 
 ```powershell
 py -m pip install -r requirements.txt
@@ -493,3 +494,26 @@ Sixteen lessons on the Ames sale prices. The question is to predict `SalePrice`.
 | `14-House Prices/14-the-log-line.ipynb` | A line on the log price |
 | `14-House Prices/15-after-the-line.ipynb` | What the published solutions add |
 | `14-House Prices/16-full-study.ipynb` | The sale, end to end |
+
+## 15. Movie Recommendation
+
+Sixteen lessons on MovieLens 100K. The question is to predict the star a person would give a movie. `data/` has 100000 ratings from 943 people on 1682 movies. The stars sum to 352986, so the mean is $176493/50000$. An empty cell is not a zero. The bias formula $\bar r_u + \bar r_i - \mu$, fit on `ua.base` and scored on `ua.test`, has root mean squared error about 0.992. Neighbor and factorization models are explained on a worked example; the audited number is that bias error. The tables are the GroupLens MovieLens 100K release; cite Harper and Konstan, ACM TiiS 2015, and read `data/README` for the use conditions.
+
+| Notebook | Title |
+|---|---|
+| `15-Movie Recommendation/01-the-question.ipynb` | Predict the star a person would give |
+| `15-Movie Recommendation/02-the-files.ipynb` | Five tables, and two kinds of separator |
+| `15-Movie Recommendation/03-one-rating.ipynb` | One row, then one person |
+| `15-Movie Recommendation/04-five-stars.ipynb` | The five stars, and their mean |
+| `15-Movie Recommendation/05-the-empty-matrix.ipynb` | Almost every pair is missing |
+| `15-Movie Recommendation/06-user-and-movie-means.ipynb` | A person has a level, and so does a movie |
+| `15-Movie Recommendation/07-the-bias-formula.ipynb` | Add the person and the movie, then subtract the global mean |
+| `15-Movie Recommendation/08-score-the-holdout.ipynb` | Fit on `ua.base`, score on `ua.test` |
+| `15-Movie Recommendation/09-similarity.ipynb` | When two people move together |
+| `15-Movie Recommendation/10-angels-and-insects.ipynb` | User 1, movie 20, held out on purpose |
+| `15-Movie Recommendation/11-genres.ipynb` | Genres describe the movie, not the person |
+| `15-Movie Recommendation/12-the-people.ipynb` | Age, gender, occupation, zip |
+| `15-Movie Recommendation/13-the-splits.ipynb` | The splits that are already in the folder |
+| `15-Movie Recommendation/14-neighbors-and-factors.ipynb` | What a neighbor model adds, and what a factorization adds |
+| `15-Movie Recommendation/15-what-we-keep.ipynb` | What the counts refuse |
+| `15-Movie Recommendation/16-full-study.ipynb` | The rating, end to end |
